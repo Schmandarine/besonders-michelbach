@@ -117,6 +117,8 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
 }
 
 .search-form-wrapper {
@@ -127,7 +129,11 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f8f9fa;
+}
+
+.search-form-wrapper label {
+  margin-bottom: 0;
+  padding-left: 1rem;
 }
 
 .searchform-trigger {
@@ -484,6 +490,18 @@ ul li {
   z-index: 10;
 }
 
+.site-navigation-wrapper.scroll-smaller .search-navi-wrapper {
+  -webkit-transform: scale(0.7) translateY(29px);
+          transform: scale(0.7) translateY(29px);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.site-navigation-wrapper.scroll-smaller .site-branding img {
+  max-width: 270px;
+  margin-bottom: -35px;
+}
+
 .site-navigation-container {
   height: 100%;
   margin-right: auto;
@@ -770,7 +788,30 @@ ul li {
   min-height: 230px;
 }
 
-/* Gutenberg Buttons */
+/* 
+** Gutenberg Editor Width 
+*/
+/* Main column width */
+.wp-block {
+  width: 80%;
+  max-width: unset;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: unset;
+  width: 90%;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: unset;
+  width: 100%;
+}
+
+/* 
+** Gutenberg Buttons 
+*/
 .wp-block-button .wp-block-button__link {
   color: white;
   background-color: #007ab9;
@@ -789,6 +830,9 @@ ul li {
   color: #007ab9;
 }
 
+/* 
+** Gutenberg Seperator 
+*/
 .wp-block-separator,
 hr {
   border: none;
@@ -797,6 +841,73 @@ hr {
   margin-right: auto;
   width: 100%;
   max-width: unset !important;
+}
+
+/* 
+** Gutenberg Colors 
+*/
+.has-primary-color {
+  color: #007ab9 !important;
+}
+
+.has-primary-background-color {
+  background-color: #007ab9 !important;
+}
+
+.has-secondary-color {
+  color: #a7c6e2 !important;
+}
+
+.has-secondary-background-color {
+  background-color: #a7c6e2 !important;
+}
+
+.has-success-color {
+  color: #28a745 !important;
+}
+
+.has-success-background-color {
+  background-color: #28a745 !important;
+}
+
+.has-info-color {
+  color: #17a2b8 !important;
+}
+
+.has-info-background-color {
+  background-color: #17a2b8 !important;
+}
+
+.has-warning-color {
+  color: #ffc107 !important;
+}
+
+.has-warning-background-color {
+  background-color: #ffc107 !important;
+}
+
+.has-danger-color {
+  color: #dc3545 !important;
+}
+
+.has-danger-background-color {
+  background-color: #dc3545 !important;
+}
+
+.has-light-color {
+  color: #f8f9fa !important;
+}
+
+.has-light-background-color {
+  background-color: #f8f9fa !important;
+}
+
+.has-dark-color {
+  color: #646567 !important;
+}
+
+.has-dark-background-color {
+  background-color: #646567 !important;
 }
 
 .wp-block-cover {

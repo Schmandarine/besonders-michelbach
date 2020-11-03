@@ -187,11 +187,11 @@ endif;
 			<div class="site-navigation-wrapper" data-visibility="hidden">
 				<div class="bg-white">
 					<div class="site-navigation-container">
-						<div class="site-branding">
+						<div class="site-branding ">
 							<?php the_custom_logo(); ?>
 						</div>
 
-						<div class="search-navi-wrapper">
+						<div class="search-navi-wrapper ">
 							<a class="searchform-trigger" id="search-trigger"><img src="<?php echo get_template_directory_uri(); ?>/img/lupe-icon.svg"></a>
 							<div id="search-form-wrapper" class="search-form-wrapper"><?php echo get_search_form(); ?></div>
 

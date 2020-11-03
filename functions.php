@@ -217,7 +217,32 @@ add_action('after_setup_theme', function() {
 /**
  * Disable the custom color picker.
  */
-function tabor_gutenberg_disable_custom_colors() {
+function gutenberg_colors_setup() {
+	// Disable Custom Colors
 	add_theme_support( 'disable-custom-colors' );
+  
+	// Editor Color Palette
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name'  => __( 'Primary', 'besonders-brombach' ),
+			'slug'  => 'primary',
+			'color'	=> '#007ab9',
+		),
+		array(
+			'name'  => __( 'Secondary', 'besonders-brombach' ),
+			'slug'  => 'secondary',
+			'color' => '#a7c6e2',
+		),
+		array(
+			'name'  => __( 'Dark', 'besonders-brombach' ),
+			'slug'  => 'dark',
+			'color' => '#646567',
+		),
+		array(
+			'name'	=> __( 'Light', 'besonders-brombach' ),
+			'slug'	=> 'light',
+			'color'	=> '#FFFFFF',
+		),
+	) );
 }
-add_action( 'after_setup_theme', 'tabor_gutenberg_disable_custom_colors' );
+add_action( 'after_setup_theme', 'gutenberg_colors_setup' );

@@ -1,6 +1,28 @@
+/* 
+** Gutenberg Editor Width 
+*/
 
+    /* Main column width */
+    .wp-block {
+        width: 80%;
+        max-width: unset;
+    }
 
-/* Gutenberg Buttons */
+    /* Width of "wide" blocks */
+    .wp-block[data-align="wide"] {
+        max-width: unset;
+        width: 90%;
+    }
+
+    /* Width of "full-wide" blocks */
+    .wp-block[data-align="full"] {
+        max-width: unset;
+        width: 100%;
+    }	
+
+/* 
+** Gutenberg Buttons 
+*/
 
 .wp-block-button {
 
@@ -22,16 +44,35 @@
     }
 }
 
+/* 
+** Gutenberg Seperator 
+*/
+    .wp-block-separator,
+    hr {
+        border: none;
+        border-bottom: 2px solid $primary;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: unset!important;
+    }
 
-.wp-block-separator,
-hr {
-    border: none;
-    border-bottom: 2px solid $primary;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: unset!important;
-}
+/* 
+** Gutenberg Colors 
+*/
+
+    @each $name, $color in $theme-colors {
+
+        .has-#{$name}-color {
+            color: $color!important;
+        }
+
+        .has-#{$name}-background-color {
+            background-color: $color!important;
+        }
+    }
+
+
 
 .wp-block-cover {
     color: white;

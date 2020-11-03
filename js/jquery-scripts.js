@@ -1,4 +1,6 @@
 (function ($) {
+    console.log("jQuery scripts ready to load");
+
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
         console.log("scrolled to anchor");
@@ -18,13 +20,15 @@
 
         if ($(this).scrollTop() >= $('.site-main').position().top) {
             $('.fixed-scroll-top').stop().fadeIn();
+            $('.site-navigation-wrapper').addClass('scroll-smaller');
         }
         if ($(this).scrollTop() <= $('.site-main').position().top) {
             $('.fixed-scroll-top').stop().fadeOut();
+            $('.site-navigation-wrapper').removeClass('scroll-smaller');
         }
     })
 
-    $("#map-scroll-notice").click(function () {
+    $("#map-scroll-notice").on('click', function () {
         $(this).css("display", "none");
     });
 

@@ -3,17 +3,16 @@
     align-items: center;
 	justify-content: center;
 	transition: all 250ms;
-	&.scroll-smaller {
-		transform: scale(0.7) translateY(29px);
-		transform-origin: top right;
-	}
 }
 
 .search-form-wrapper {
 	display: none;
 	&.visible {
 		display: flex;
-		background-color: $light;
+	}
+	label {
+		margin-bottom: 0;
+		padding-left: 1rem;
 	}
 }
 

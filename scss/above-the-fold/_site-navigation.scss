@@ -4,6 +4,16 @@
   top: 0;
   z-index: 10;
 
+  &.scroll-smaller {
+    .search-navi-wrapper {
+        transform: scale(0.7) translateY(29px);
+        transform-origin: top right;
+    }
+    .site-branding img {
+        max-width: 270px;
+        margin-bottom: -35px;
+    }
+  }
 }
 
 .site-navigation-container {
@@ -40,14 +50,12 @@
 
 }
 
-.site-branding img {
-  height: auto;
-  transition: all 250ms;
-  padding: 0 2em 0 0;
-  max-width: 350px;
-  &.scroll-smaller {
-    max-width: 270px;
-    margin-bottom: -35px;
+.site-branding {
+  img {
+    height: auto;
+    transition: all 250ms;
+    padding: 0 2em 0 0;
+    max-width: 350px;
   }
 }
 
