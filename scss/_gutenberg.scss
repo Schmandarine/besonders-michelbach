@@ -1,0 +1,72 @@
+
+
+/* Gutenberg Buttons */
+
+.wp-block-button {
+
+    .wp-block-button__link {
+        color: white;
+        background-color: $primary;
+        border-radius: 0;
+        &:hover {
+            color: white;
+            transform: scale(1.04);
+        }
+    }
+    &.is-style-outline {
+        .wp-block-button__link {
+            background-color: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+}
+
+
+.wp-block-separator,
+hr {
+    border: none;
+    border-bottom: 2px solid $primary;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: unset!important;
+}
+
+.wp-block-cover {
+    color: white;
+}
+
+.site-main {
+
+		& > * {
+			margin: 40px auto 40px auto;
+		}
+
+		& > *:not(.alignfull) {
+            max-width: map-get($container-max-widths, xs);
+            padding: 0 15px 0 15px;
+
+            @include media-breakpoint-up(sm) {
+                max-width: map-get($container-max-widths, sm);
+            }
+            @include media-breakpoint-up(md) {
+                max-width: map-get($container-max-widths, md);
+            }
+            @include media-breakpoint-up(lg) {
+                max-width: map-get($container-max-widths, lg);
+            }
+            @include media-breakpoint-up(xl) {
+                max-width: map-get($container-max-widths, xl);
+            }
+
+			
+		}
+
+		& > .alignwide {
+            max-width: 1440px;
+            width: 100%;
+		}
+	
+}
+

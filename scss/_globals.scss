@@ -1,0 +1,70 @@
+/* open-sans-regular - latin */
+
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#primary {
+    padding-top: 3rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    text-transform: uppercase;
+    word-break: normal;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(xs) {
+        word-break: break-word;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: .2px;
+}
+
+
+
+p {
+    font-size: 1.2em;
+
+    @media (max-width: 370px) {
+        word-break: break-word;
+    }
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
+}
+
+ul {
+    padding: 0 1.5em;
+
+    &.container {
+        li {
+            margin-left: 1em;
+        }
+    }
+
+    li {
+        margin: .5em 0;
+        font-size: 1.2em;
+    }
+}
+
+
+
+#secondary .widget {
+    background-color: white;
+}

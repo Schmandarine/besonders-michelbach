@@ -1,0 +1,116 @@
+// Cards
+
+.hero-cards {
+    margin-top: -185px!important;
+    position: relative;
+    z-index: 5;
+}
+
+// This is the VIEW Component of Flip Boxes - only styling
+.flip-box-block {
+
+    .card {
+        &:hover {
+            text-decoration: none;
+
+            .content {
+                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+                transform: scale(1) translateY(-2px);
+            }
+
+
+
+            .icon-bg-rounded {
+                animation: bounce 0.4s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    .icon-bg-rounded {
+        background-color: white;
+        position: absolute;
+        top: -40px;
+        left: -15px;
+        z-index: 1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .flipbox-title {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 10px 20px;
+
+        svg {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translateX(96%);
+
+            path {
+                fill: $secondary;
+            }
+        }
+
+        &.secondary {
+            background: #8b592b;
+            background: -moz-linear-gradient(left, #8b592b 0%, #6a441e 100%);
+            background: -webkit-linear-gradient(left, #8b592b 0%, #6a441e 100%);
+            background: linear-gradient(to right, #8b592b 0%, #6a441e 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8b592b', endColorstr='#6a441e', GradientType=1);
+
+            svg path {
+                fill: #6a441e;
+            }
+        }
+
+        &.primary {
+            background: #09a536;
+            background: -moz-linear-gradient(left, #09a536 0%, #82bb23 100%);
+            background: -webkit-linear-gradient(left, #09a536 0%, #82bb23 100%);
+            background: linear-gradient(to right, #09a536 0%, #82bb23 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#09a536', endColorstr='#82bb23', GradientType=1);
+
+            svg path {
+                fill: #82bb23;
+            }
+        }
+    }
+
+    .inner {
+        font-size: .8rem;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .back .inner .return {
+        border: 1px solid $dark;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: auto;
+        font-size: 1.3em;
+    }
+}

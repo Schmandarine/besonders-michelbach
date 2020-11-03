@@ -1,0 +1,65 @@
+.site-footer {
+    font-size: .8rem;
+    overflow: hidden;
+
+    .footer-sandkoerner {
+        top: 0;
+        right: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+
+        @include media-breakpoint-down(lg) {
+            position: relative;
+            text-align: center;
+            display: block;
+            padding-top: 0.5rem;
+        }
+    }
+
+    .footer-map-wrapper {
+
+        position: relative;
+        width: 100%;
+        height: 58vh;
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        #map-scroll-notice {
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            z-index: 9;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            color: white;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 2em;
+            font-weight: 700;
+            z-index: 2000;
+        }
+
+        #map-scroll-notice:hover {
+            opacity: 0.7;
+            -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+            cursor: pointer;
+        }
+    }
+
+}

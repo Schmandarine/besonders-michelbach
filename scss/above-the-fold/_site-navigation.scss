@@ -1,0 +1,167 @@
+
+.site-navigation-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+}
+
+.site-navigation-container {
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  transition: 250ms all;
+  padding: 0 15px 0 15px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-navigation-container,
+.menu-all-pages-container {
+  margin: 0 auto;
+
+  max-width: map-get($container-max-widths, xs);
+
+  @include media-breakpoint-up(sm) {
+      max-width: map-get($container-max-widths, sm);
+  }
+  @include media-breakpoint-up(md) {
+      max-width: map-get($container-max-widths, md);
+  }
+  @include media-breakpoint-up(lg) {
+      max-width: map-get($container-max-widths, lg);
+  }
+  @include media-breakpoint-up(xl) {
+      max-width: map-get($container-max-widths, xl);
+  }
+
+}
+
+.site-branding img {
+  height: auto;
+  transition: all 250ms;
+  padding: 0 2em 0 0;
+  max-width: 350px;
+  &.scroll-smaller {
+    max-width: 270px;
+    margin-bottom: -35px;
+  }
+}
+
+#site_navigation_menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &>li {
+    margin: 0;
+    position: relative;
+
+    & > a {
+      width: 50%;
+    }
+  }
+
+  li.current-menu-item a {
+    font-weight: bold;
+  }
+
+  li.current-menu-ancestor>a {
+    //color: $primary;
+  }
+
+
+}
+
+
+
+  .main-navigation {
+    height: 0;
+    overflow: hidden;
+    transition: all 250ms;
+    position: absolute;
+    width: 100%;
+    background: rgba(0,122,185,0.9);
+    
+
+    &.active {
+      height: 100vh;
+      overflow: auto;
+      padding-top: 9vw;
+    }
+
+
+    a {
+      color: white;
+      font-weight: 600;
+      display: block;
+      font-size: 2rem;
+      text-transform: uppercase;
+  
+      &:hover {
+        font-weight: bold!important;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .menu-item-has-children {
+
+    .sub-menu {
+      display: none;
+      list-style: none;
+      list-style: none;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      z-index: 2;
+
+      li {
+        margin: 0;
+      }
+
+      a {
+        font-weight: 300;
+        font-size: 1.7rem;
+      }
+
+    }
+
+    &.close {
+
+      & > a {
+        font-weight: bold;
+
+        &:after{
+          content: '';
+          display: block;
+          height: 1px;
+          width: 95%;
+          background-color: transparent;
+          border-bottom: 2px dashed white;
+        }
+      }
+      
+      
+      .sub-menu {
+        display: block;
+      }
+
+    }
+
+  }
+
+
+  .site-navi-bg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }

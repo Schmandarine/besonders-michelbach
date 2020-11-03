@@ -1,0 +1,41 @@
+.search-navi-wrapper {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	transition: all 250ms;
+	&.scroll-smaller {
+		transform: scale(0.7) translateY(29px);
+		transform-origin: top right;
+	}
+}
+
+.search-form-wrapper {
+	display: none;
+	&.visible {
+		display: flex;
+		background-color: $light;
+	}
+}
+
+.searchform-trigger {
+	background-color: $primary;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4em;
+	height: 4em;
+	transition: all 250ms;
+
+	&:hover {
+	  opacity: 0.9;
+	}
+
+	img {
+	  width: 2em;
+	  height: 2em;
+	  position: relative;
+	}
+  }

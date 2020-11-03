@@ -1,0 +1,54 @@
+@import "../../../scss/variables";
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 600;
+
+
+    .content {
+        color: $dark;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        transition: all 250ms;
+    }
+
+    &:hover svg path {
+        fill: $primary;
+    }
+
+    svg path {
+        fill: $dark;
+    }
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    opacity: .9;
+}
+
+.active_chevron {
+    transform: rotate(180deg);
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 1em;
+    display: none;
+    background-color: $light;
+}

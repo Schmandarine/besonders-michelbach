@@ -1,0 +1,59 @@
+.slick-dots li button {
+    content: "";
+    padding: 0;
+    width: 20px;
+    height: 5px;
+    background-color: $light;
+    opacity: 1;
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $primary;
+}
+
+.slick-dots {
+    bottom: -72px;
+    z-index: 2;
+    width: unset;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-arrow-custom {
+    z-index: 1;
+    position: relative;
+
+    &.next-slick {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    svg {
+        width: 3em;
+        height: 3em;
+        cursor: pointer;
+
+        &:hover path {
+            fill: $primary;
+        }
+
+        path {
+            fill: $secondary;
+        }
+    }
+
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 80px;
+
+    @include media-breakpoint-up(md) {
+        //margin-bottom: 120px;
+    }
+
+}

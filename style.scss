@@ -1,0 +1,43 @@
+/*
+Theme Name: besonders-brombach
+Author: Jan Brombach
+*/
+
+
+@import "./scss/fonts";
+@import "./scss/variables";
+
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+
+@import "./scss/globals";
+@import "./scss/assets/searchform";
+
+
+@import "./scss/karten";
+@import "./scss/site-footer";
+@import "./scss/site-meta-contact";
+
+
+@import "./scss/above-the-fold/site-navigation";
+@import "./scss/above-the-fold/hamburger-icon";
+@import "./scss/above-the-fold/hero-content";
+
+
+//@import "./node_modules/aos/src/sass/aos.scss";
+
+//@import "./node_modules/slick-carousel/slick/slick.scss";
+//@import "./node_modules/slick-carousel/slick/slick-theme.scss";
+//@import "./scss/libarys/slick-custom";
+
+@import "./scss/gutenberg";
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+  }

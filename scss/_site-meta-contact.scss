@@ -1,0 +1,111 @@
+.fixed-scroll-top {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 50px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow: 5px 5px 25px #f0f0f0,
+        -5px -5px 25px #ffffff;
+
+    &:hover svg path {
+        stroke: $primary;
+    }
+
+    svg {
+        width: 3.5em;
+        height: 3.5em;
+        filter: drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.2));
+        transform: rotate(90deg);
+
+        path {
+            stroke: $dark;
+        }
+    }
+
+}
+
+
+.fixed-meta-contact {
+    position: fixed;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-40%);
+    z-index: 4;
+
+    .meta-hexagon-icons {
+        width: 3.5em;
+        height: 3.5em;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+        cursor: pointer;
+
+        &:hover {
+            .hexagon-bg-item path {
+                fill: $primary;
+            }
+
+            .meta-svg-icon path {
+                fill: white;
+            }
+        }
+
+        .hexagon-bg-item {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+
+            path {
+                transition: all 250ms;
+            }
+        }
+
+        .meta-svg-icon {
+            width: 50%;
+            height: 50%;
+            transition: all 250ms;
+
+            path {
+                fill: $secondary;
+                transition: all 250ms;
+            }
+        }
+    }
+
+
+
+}
+
+.fixed-mobile-meta-contact {
+
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: $primary;
+    align-items: center;
+    justify-content: space-around;
+
+    .meta-contact-icon {
+        margin: 0.8em;
+
+        svg {
+            width: 1em;
+            height: 1em;
+
+            path {
+                fill: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.button-wrapper {
+    transform: scale(2);
+    width: 4em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    cursor: pointer;
+    margin-left: 29px;
+    &:hover {
+      opacity: 0.9;
+    }
+}
+
+
+#hamburger-toggle {
+  
+    div {
+      width: 35px;
+      height: 4px;
+      margin: 9px;
+      background-color: $primary;
+      transition: 0.3s;
+  
+      &:nth-child(2) {
+        width: 26px;
+        background-color: $secondary;
+      }
+
+    }
+
+    &:hover > div:nth-child(2) {
+      background-color: $primary;
+      width: 35px;
+    }
+
+    &.close {
+        margin-top: -10px;
+        div {
+          &:nth-child(1) {
+            transform: rotate(45deg);
+            margin-top: 22px !important;
+    
+          }
+          &:nth-child(2) {
+            background-color: transparent !important;
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+            margin-top: -26px !important;
+    
+          }
+        }
+      }
+
+  }
+  

@@ -1,0 +1,46 @@
+$primary: #007ab9;
+$secondary: #a7c6e2;
+
+$gray-100: #f8f9fa !default;
+$gray-300: #dee2e6 !default;
+$gray-500: #adb5bd !default;
+$gray-800: #343a40 !default;
+
+$dark: #646567;
+
+$enable-rounded: false;
+
+
+$link-color: $primary;
+
+// utility 
+
+$spacer: 1.5rem;
+
+// Cards
+$card-border-radius: 0;
+$card-border-color: none;
+$card-color: white;
+$card-bg: transparent;
+
+$font-family-sans-serif: "Open Sans";
+$lead-font-size: 1.3em;
+
+// Typo
+
+$body-color: $dark;
+$h2-font-size: 1.9em;
+$h3-font-size: 1.6em;
+$headings-font-weight: 200;
+$headings-margin-bottom: $spacer;
+
+//Buttons
+$btn-padding-y: .4rem;
+$btn-padding-x: 1.3rem;
+$btn-border-radius: 50px;
+
+// slick
+
+$slick-arrow-color: $secondary;
+$slick-font-family: "Open Sans";
+
