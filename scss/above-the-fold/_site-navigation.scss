@@ -30,11 +30,8 @@
 }
 
 .site-navigation-container,
-.menu-all-pages-container {
-  margin: 0 auto;
-
+#site_navigation_menu {
   max-width: map-get($container-max-widths, xs);
-
   @include media-breakpoint-up(sm) {
       max-width: map-get($container-max-widths, sm);
   }
@@ -61,7 +58,7 @@
 
 #site_navigation_menu {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   &>li {

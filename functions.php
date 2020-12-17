@@ -164,7 +164,7 @@ function besonders_brombach_scripts() {
 	//wp_enqueue_script( 'besonders-michelbach-plugin-magic-scroll-animation', get_template_directory_uri() . '/node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js', array( 'besonders-michelbach-main-magic-scroll' ), '' , true );
 	//wp_enqueue_script( 'besonders-michelbach-plugin-magic-scroll-addIndicators', get_template_directory_uri() . '/node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js', array( 'besonders-michelbach-main-magic-scroll' ), '' , true );
 	//wp_enqueue_script( 'besonders-michelbach-plugin-magic-scroll-ScrollMagic', get_template_directory_uri() . '/node_modules/scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js', array( 'besonders-michelbach-main-magic-scroll' ), '' , true );
-		//wp_enqueue_script( 'besonders-michelbach-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
+	//wp_enqueue_script( 'besonders-michelbach-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -219,38 +219,7 @@ add_action('after_setup_theme', function() {
 
 
 
-/**
- * Disable the custom color picker.
- */
-function gutenberg_colors_setup() {
-	// Disable Custom Colors
-	add_theme_support( 'disable-custom-colors' );
-  
-	// Editor Color Palette
-	add_theme_support( 'editor-color-palette', array(
-		array(
-			'name'  => __( 'Primary', 'besonders-michelbach' ),
-			'slug'  => 'primary',
-			'color'	=> '#007ab9',
-		),
-		array(
-			'name'  => __( 'Secondary', 'besonders-michelbach' ),
-			'slug'  => 'secondary',
-			'color' => '#a7c6e2',
-		),
-		array(
-			'name'  => __( 'Dark', 'besonders-michelbach' ),
-			'slug'  => 'dark',
-			'color' => '#646567',
-		),
-		array(
-			'name'	=> __( 'Light', 'besonders-michelbach' ),
-			'slug'	=> 'light',
-			'color'	=> '#FFFFFF',
-		),
-	) );
-}
-add_action( 'after_setup_theme', 'gutenberg_colors_setup' );
+
 
 
 function  markers_endpoint( $request_data ) {

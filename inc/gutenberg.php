@@ -58,6 +58,40 @@ function register_block_pattern_categorys(){
 	}
 }
 
+
+/**
+ * Disable the custom color picker.
+ */
+function gutenberg_colors_setup() {
+	// Disable Custom Colors
+	add_theme_support( 'disable-custom-colors' );
+  
+	// Editor Color Palette
+	add_theme_support( 'editor-color-palette', array(
+		array(
+			'name'  => __( 'Primary', 'besonders-michelbach' ),
+			'slug'  => 'primary',
+			'color'	=> '#007ab9',
+		),
+		array(
+			'name'  => __( 'Secondary', 'besonders-michelbach' ),
+			'slug'  => 'secondary',
+			'color' => '#a7c6e2',
+		),
+		array(
+			'name'  => __( 'Dark', 'besonders-michelbach' ),
+			'slug'  => 'dark',
+			'color' => '#646567',
+		),
+		array(
+			'name'	=> __( 'Light', 'besonders-michelbach' ),
+			'slug'	=> 'light',
+			'color'	=> '#FFFFFF',
+		),
+	) );
+}
+add_action( 'after_setup_theme', 'gutenberg_colors_setup' );
+
 /**
  * Registers support for editor styles & Enqueue it.
  */
