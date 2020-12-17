@@ -19,16 +19,30 @@ function register_block_patterns(){
 
 
 		/**
-		* Test Pattern
+		* Hero Cards Fastnavigation Pattern
 		*/
 		$hero_cards_pattern = get_pattern_content( 'template-parts/patterns/hero-cards-pattern' );
 
 		register_block_pattern( 
-			'besonders/test-pattern', 
+			'besonders/hero-cards', 
 			[
 				'title' => __( 'Hero Cards' , 'besonders-michelbach' ),
 				'categories' => [ 'design-system' ],
 				'content' => $hero_cards_pattern,
+			] );
+
+
+		/**
+		* Product Cards Slider Pattern
+		*/
+		$product_cards_slider_pattern = get_pattern_content( 'template-parts/patterns/products-cards-slider-pattern' );
+
+		register_block_pattern( 
+			'besonders/product-cards-slider', 
+			[
+				'title' => __( 'Product Cards Slider' , 'besonders-michelbach' ),
+				'categories' => [ 'design-system' ],
+				'content' => $product_cards_slider_pattern,
 			] );
 
 
@@ -117,44 +131,6 @@ function register_acf_gutenberg() {
 	// check function exists
 	if( function_exists('acf_register_block') ) {
 
-		
-		acf_register_block(array(
-			'name'				=> 'flip_box_single',
-			'title'				=> __('Flip Box Einzeln'),
-			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/flip_box_single/flip_box_single.php',
-			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/flip_box_single/flip_box_single.css',
-			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
-			'mode'				=> 'edit',
-			'supports' => array( 'mode' => true ,'align' => true )
-		));
-		
-/*
-		acf_register_block(array(
-			'name'				=> 'flip_box_repeater',
-			'title'				=> __('Flip Box Wiederholung'),
-			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/flip_box_repeater/flip_box_repeater.php',
-			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/flip_box_repeater/flip_box_repeater.css',
-			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
-			'mode'				=> 'edit',
-			'supports' => array( 'mode' => true ,'align' => true )
-		));
-*/
-
-		acf_register_block(array(
-			'name'				=> 'minimal_card',
-			'title'				=> __('Mini Karte'),
-			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/minimal_card/minimal_card.php',
-			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/minimal_card/minimal_card.css',
-			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
-			'mode'				=> 'edit',
-			'supports' => array( 'mode' => false ,'align' => false )
-		));
 
 		acf_register_block(array(
 			'name'				=> 'accordeon',
@@ -170,23 +146,11 @@ function register_acf_gutenberg() {
 		));
 
 		acf_register_block(array(
-			'name'				=> 'cta',
-			'title'				=> __('call to action'),
+			'name'				=> 'minimal_card',
+			'title'				=> __('Mini Karte'),
 			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/cta/cta.php',
-			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/cta/cta.css',
-			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
-			'mode'				=> 'edit',
-			'supports' => array( 'mode' => false ,'align' => false )
-		));
-
-		acf_register_block(array(
-			'name'				=> 'section-headline',
-			'title'				=> __('Sektion Headline'),
-			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/section-headline/section-headline.php',
-			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/section-headline/section-headline.css',
+			'render_template'   => get_template_directory() . '/template-parts/blocks/minimal_card/minimal_card.php',
+			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/minimal_card/minimal_card.css',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'mode'				=> 'edit',

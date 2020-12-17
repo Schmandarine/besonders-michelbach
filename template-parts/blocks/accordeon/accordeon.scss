@@ -6,17 +6,18 @@
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-
     cursor: pointer;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
     font-weight: 600;
+    background-color: $light-primary;
+    color: $primary;
 
-
-    .content {
-        color: $dark;
+    &:hover {
+        background-color: $primary;
+        color: white;
     }
 
     .icon {
@@ -26,11 +27,11 @@
     }
 
     &:hover svg path {
-        fill: $primary;
+        fill: white;
     }
 
     svg path {
-        fill: $dark;
+        fill: $primary;
     }
 
 }

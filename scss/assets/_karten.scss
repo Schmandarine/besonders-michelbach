@@ -1,10 +1,17 @@
 // Cards
+.custom_card {
+    
+    a {
+        width: 100%;
+    }
 
+}
 .hero-cards {
     margin-top: -185px!important;
     position: relative;
     z-index: 5;
 }
+
 
 // This is the VIEW Component of Flip Boxes - only styling
 .flip-box-block {

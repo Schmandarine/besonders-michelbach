@@ -2,7 +2,7 @@
 /**
  * Hero Cards Pattern Template
  *
- * @package aquila
+ * @package besonders-michelbach
  */
 
 ?>

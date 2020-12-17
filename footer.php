@@ -28,12 +28,18 @@
 <style>
 	@media (min-width: 993px){
 		.hero-bg-img {
-			background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(),''); ?>);
+			<?php 
+			$thumbnail_url = get_the_post_thumbnail_url() ? get_the_post_thumbnail_url(get_the_ID(),'') : get_template_directory_uri().'/img/default-img.png';
+			echo 'background-image: url('.$thumbnail_url.')';
+			?>
 		}
 	}
 	@media (max-width: 992px){
 		.hero-bg-img {
-			background-image: url(<?php echo get_the_post_thumbnail_url(get_the_ID(),'mobile-hero'); ?>);
+			<?php 
+			$thumbnail_url = get_the_post_thumbnail_url() ? get_the_post_thumbnail_url(get_the_ID(),'mobile-hero') : get_template_directory_uri().'/img/default-img.png';
+			echo 'background-image: url('.$thumbnail_url.')';
+			?>			
 		}
 	}
 

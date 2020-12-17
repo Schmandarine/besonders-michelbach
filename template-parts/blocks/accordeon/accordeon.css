@@ -7,10 +7,13 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-weight: 600;
+  background-color: #CCDEEF;
+  color: #007ab9;
 }
 
-.accordion .content {
-  color: #646567;
+.accordion:hover {
+  background-color: #007ab9;
+  color: white;
 }
 
 .accordion .icon {
@@ -21,11 +24,11 @@
 }
 
 .accordion:hover svg path {
-  fill: #007ab9;
+  fill: white;
 }
 
 .accordion svg path {
-  fill: #646567;
+  fill: #007ab9;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

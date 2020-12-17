@@ -119,6 +119,7 @@ ul li {
           justify-content: center;
   -webkit-transition: all 250ms;
   transition: all 250ms;
+  margin: 1em 0;
 }
 
 .search-form-wrapper {
@@ -164,6 +165,10 @@ ul li {
   width: 2em;
   height: 2em;
   position: relative;
+}
+
+.custom_card a {
+  width: 100%;
 }
 
 .hero-cards {
@@ -556,6 +561,7 @@ ul li {
   transition: all 250ms;
   padding: 0 2em 0 0;
   max-width: 350px;
+  width: 100%;
 }
 
 #site_navigation_menu {
