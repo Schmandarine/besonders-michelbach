@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package besonders-brombach
+ * @package besonders-michelbach
  */
 
 get_header();
@@ -55,8 +55,8 @@ get_header();
 
 				<?php the_post_navigation(
 					array(
-						'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Vorheriger Beitrag:', 'besonders-brombach' ) . '</span> <span class="nav-title">%title</span>',
-						'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Nächster Beiträg:', 'besonders-brombach' ) . '</span> <span class="nav-title">%title</span>',
+						'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Vorheriger Beitrag:', 'besonders-michelbach' ) . '</span> <span class="nav-title">%title</span>',
+						'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Nächster Beiträg:', 'besonders-michelbach' ) . '</span> <span class="nav-title">%title</span>',
 					)
 				);
 

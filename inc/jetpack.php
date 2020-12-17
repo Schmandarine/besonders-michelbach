@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package besonders-brombach
+ * @package besonders-michelbach
  */
 
 /**
@@ -33,7 +33,7 @@ function besonders_brombach_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'besonders-brombach-style',
+				'stylesheet' => 'besonders-michelbach-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',

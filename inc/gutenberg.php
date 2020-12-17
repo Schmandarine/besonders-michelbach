@@ -12,7 +12,7 @@ function register_block_patterns(){
 		register_block_pattern( 
 			'besonders/parallax-cover', 
 			[
-				'title' => __( 'Parallax Cover' , 'besonders-brombach' ),
+				'title' => __( 'Parallax Cover' , 'besonders-michelbach' ),
 				'categories' => [ 'design-system' ],
 				'content' => $parallax_cover_content,
 			] );
@@ -26,7 +26,7 @@ function register_block_patterns(){
 		register_block_pattern( 
 			'besonders/test-pattern', 
 			[
-				'title' => __( 'Hero Cards' , 'besonders-brombach' ),
+				'title' => __( 'Hero Cards' , 'besonders-michelbach' ),
 				'categories' => [ 'design-system' ],
 				'content' => $hero_cards_pattern,
 			] );
@@ -46,7 +46,7 @@ function get_pattern_content( $template_path ){
 
 function register_block_pattern_categorys(){
 	$pattern_categorys = [
-		'design-system' => __('Design System', 'besonders-brombach')
+		'design-system' => __('Design System', 'besonders-michelbach')
 	];
 	if(!empty($pattern_categorys) && is_array($pattern_categorys)){
 		foreach ( $pattern_categorys as $pattern_category => $pattern_category_label ){

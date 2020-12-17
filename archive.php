@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package besonders-coi
+ * @package besonders-michelbach
  */
 
 get_header();

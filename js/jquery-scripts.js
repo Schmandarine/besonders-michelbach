@@ -18,11 +18,11 @@
 
     $(document).on('scroll', function () {
 
-        if ($(this).scrollTop() >= $('.site-main').position().top) {
+        if ($(this).scrollTop() >= $('#page').position().top) {
             $('.fixed-scroll-top').stop().fadeIn();
             $('.site-navigation-wrapper').addClass('scroll-smaller');
         }
-        if ($(this).scrollTop() <= $('.site-main').position().top) {
+        if ($(this).scrollTop() <= $('#page').position().top) {
             $('.fixed-scroll-top').stop().fadeOut();
             $('.site-navigation-wrapper').removeClass('scroll-smaller');
         }
