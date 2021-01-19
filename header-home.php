@@ -31,7 +31,7 @@
 		<header id="masthead" class="site-header">
 			<div class="hero-wrapper hero-bg-img">
 				<div class="hero-content site-navigation-container">
-					<h1 class="m-0"><?php the_title(); ?></h1>
+					<h1 class="m-0"><?php the_field('site_headline'); ?></h1>
 				</div>
 			</div>
 		</header><!-- #masthead -->

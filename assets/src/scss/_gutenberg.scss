@@ -20,6 +20,28 @@
         width: 100%;
     }	
 
+
+
+    @include media-breakpoint-down(lg) {
+
+        .wp-block-column {
+          flex-basis: 100% !important; } 
+        }
+
+
+
+    @include media-breakpoint-up(lg) {
+
+        .wp-block-column {
+          flex-basis: 0;
+          flex-grow: 1; }
+          .wp-block-column[style*="flex-basis"] {
+            flex-grow: 0; }
+          .wp-block-column:not(:first-child) {
+            margin-left: 2em; } 
+
+        }
+
 /* 
 ** Gutenberg Buttons 
 */
@@ -82,20 +104,21 @@
 .site-main {
 
 		& > * {
-			margin: 40px auto 40px auto;
+            margin-left: auto;
+            margin-right: auto;
 		}
 
 		& > *:not(.alignfull) {
             max-width: map-get($container-max-widths, xs);
             padding: 0 15px 0 15px;
 
-            @include media-breakpoint-up(sm) {
+            @include media-breakpoint-down(sm) {
                 max-width: map-get($container-max-widths, sm);
             }
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-only(md) {
                 max-width: map-get($container-max-widths, md);
             }
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-only(lg) {
                 max-width: map-get($container-max-widths, lg);
             }
             @include media-breakpoint-up(xl) {

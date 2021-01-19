@@ -22,7 +22,6 @@
 /* open-sans-600 - latin */
 @font-face {
   font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 600;
   src: url("../fonts/open-sans-v18-latin-600.eot");
   /* IE9 Compat Modes */
@@ -807,6 +806,31 @@ ul li {
   width: 100%;
 }
 
+@media (max-width: 1199.98px) {
+  .wp-block-column {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .wp-block-column {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .wp-block-column[style*="flex-basis"] {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .wp-block-column:not(:first-child) {
+    margin-left: 2em;
+  }
+}
+
 /* 
 ** Gutenberg Buttons 
 */
@@ -915,26 +939,27 @@ hr {
 }
 
 .site-main > * {
-  margin: 40px auto 40px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-main > *:not(.alignfull) {
   padding: 0 15px 0 15px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 767.98px) {
   .site-main > *:not(.alignfull) {
     max-width: 540px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .site-main > *:not(.alignfull) {
     max-width: 720px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .site-main > *:not(.alignfull) {
     max-width: 960px;
   }

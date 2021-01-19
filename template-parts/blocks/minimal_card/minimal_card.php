@@ -28,17 +28,16 @@ $card_link = get_field('link');
 
 <div data-aos="fade-up" data-aos-offset="-50" id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
 
-    <div class="custom_card box-shadow bg-white position-relative mb-3 h-100">
+    <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
         <?php echo $img_attach ?>
         <div class="d-flex flex-row">
             <?php 
                 if( $card_link ) : ?>
-                <a href="<?php echo $card_link; ?>" class="content d-block p-3 lead"><?php echo $card_text ?></a>
+                <span class="content d-block p-3 lead"><?php echo $card_text ?></span>
             <?php else : ?>
                 <div class="content p-3 lead"><?php echo $card_text ?></div>
             <?php endif; ?>
         </div>
-        
-    </div>
+    </a>
 
 </div>
