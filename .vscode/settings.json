@@ -4,8 +4,12 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "~/"
+      "savePath": "/assets/dist/css"
     }
   ],
-  "xd.lastPackage": "/C:/Users/Mitarbeiter/Desktop/DSP/test-bootstrap5-dsp"
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "**/template-parts/**",
+  ]
 }
