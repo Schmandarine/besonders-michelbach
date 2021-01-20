@@ -32,9 +32,13 @@ h3,
 h2 {
     font-weight: bold;
     letter-spacing: .2px;
+    font-size: 2.3rem;
+    color: $primary;
 }
 
-
+b, strong {
+    font-weight: 600;
+}
 
 p {
     font-size: 1.2em;

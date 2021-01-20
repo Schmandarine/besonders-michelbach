@@ -68,6 +68,12 @@ h3,
 h2 {
   font-weight: bold;
   letter-spacing: .2px;
+  font-size: 2.3rem;
+  color: #007ab9;
+}
+
+b, strong {
+  font-weight: 600;
 }
 
 p {
@@ -170,6 +176,11 @@ ul li {
   margin-top: -185px !important;
   position: relative;
   z-index: 5;
+}
+
+.minimal_card a {
+  color: #646567;
+  text-transform: uppercase;
 }
 
 .flip-box-block .card:hover {
@@ -529,7 +540,7 @@ ul li {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 782px) {
   .site-navigation-container,
   #site_navigation_menu {
     max-width: 720px;
@@ -806,28 +817,11 @@ ul li {
   width: 100%;
 }
 
-@media (max-width: 1199.98px) {
-  .wp-block-column {
+@media (max-width: 781.98px) {
+  #primary .wp-block-column {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .wp-block-column {
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-  .wp-block-column[style*="flex-basis"] {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-  }
-  .wp-block-column:not(:first-child) {
-    margin-left: 2em;
+    margin-left: 0;
   }
 }
 
@@ -936,6 +930,12 @@ hr {
 
 .wp-block-cover {
   color: white;
+  margin-bottom: 3rem;
+}
+
+.wp-block-group {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 .site-main > * {
@@ -947,13 +947,13 @@ hr {
   padding: 0 15px 0 15px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 781.98px) {
   .site-main > *:not(.alignfull) {
     max-width: 540px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 782px) and (max-width: 991.98px) {
   .site-main > *:not(.alignfull) {
     max-width: 720px;
   }

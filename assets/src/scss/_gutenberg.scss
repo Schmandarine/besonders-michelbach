@@ -20,27 +20,21 @@
         width: 100%;
     }	
 
+    @include media-breakpoint-down(sm) {
+    #primary .wp-block-column:nth-child(2n) {
+        //margin-left: 0;
+    }
+}
 
+    @include media-breakpoint-down(sm) {
 
-    @include media-breakpoint-down(lg) {
-
-        .wp-block-column {
-          flex-basis: 100% !important; } 
-        }
-
-
-
-    @include media-breakpoint-up(lg) {
-
-        .wp-block-column {
-          flex-basis: 0;
-          flex-grow: 1; }
-          .wp-block-column[style*="flex-basis"] {
-            flex-grow: 0; }
-          .wp-block-column:not(:first-child) {
-            margin-left: 2em; } 
+        #primary .wp-block-column {
+            flex-basis: 100%!important; 
+            margin-left: 0;
+        } 
 
         }
+
 
 /* 
 ** Gutenberg Buttons 
@@ -99,6 +93,12 @@
 
 .wp-block-cover {
     color: white;
+    margin-bottom: 3rem;
+}
+
+.wp-block-group {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .site-main {

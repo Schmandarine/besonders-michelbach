@@ -12,6 +12,12 @@
     z-index: 5;
 }
 
+// Minimal Cards
+
+.minimal_card a {
+    color: $dark;
+    text-transform: uppercase;
+}
 
 // This is the VIEW Component of Flip Boxes - only styling
 .flip-box-block {
