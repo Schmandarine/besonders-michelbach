@@ -218,7 +218,15 @@ endif;
 					?>
 				</nav><!-- #site-navigation -->
 				<div class="site-navi-bg">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/site-navi-bg.svg" alt="">
+					<?php 
+					if(is_page(179)){
+						echo '<img src="'.get_template_directory_uri().'/img/site-navi-bg-wrg.svg" alt="">';
+					} elseif(is_page(182)) {
+						echo '<img src="'.get_template_directory_uri().'/img/site-navi-bg-rueck.svg" alt="">';
+					} else {
+						echo '<img src="'.get_template_directory_uri().'/img/site-navi-bg.svg" alt="">';
+					}
+					?>
 				</div>
 			</div>
 

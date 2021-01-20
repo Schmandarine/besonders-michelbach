@@ -18,7 +18,7 @@
 	</div>
 
 	<footer class="site-footer pt-5">
-
+		<img src="<?php echo get_template_directory_uri(); ?>/img/site-footer@2x.png" alt="" width="1920" height="762" style="max-width: 100%; height: auto">
 	</footer>
 
 </div><!-- #page -->	

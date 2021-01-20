@@ -7057,12 +7057,15 @@ hr {
 
 .wp-block-cover {
   color: white;
-  margin-bottom: 3rem;
 }
 
 .wp-block-group {
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
+}
+
+.wp-block-cover,
+.wp-block-group {
+  margin-bottom: 4rem;
 }
 
 .site-main > * {

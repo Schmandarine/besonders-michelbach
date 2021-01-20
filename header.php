@@ -32,5 +32,5 @@
 				<div class="hero-content site-navigation-container">
 					<h1 class="m-0"><?php the_field('site_headline'); ?></h1>
 				</div>
-			</div>
+			</div>	
 		</header><!-- #masthead -->

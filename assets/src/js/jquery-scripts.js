@@ -5,7 +5,7 @@
         event.preventDefault();
         console.log("scrolled to anchor");
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top + -90
+            scrollTop: $($.attr(this, 'href')).offset().top + -190
         }, 200);
     });
 
