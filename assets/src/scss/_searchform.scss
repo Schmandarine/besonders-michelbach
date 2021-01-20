@@ -4,12 +4,15 @@
 	justify-content: center;
 	transition: all 250ms;
 	margin: 1em 0;
+	align-items: stretch;
 }
 
 .search-form-wrapper {
+	align-items: center;
 	display: none;
 	&.visible {
 		display: flex;
+		background-color: $light;
 	}
 	label {
 		margin-bottom: 0;

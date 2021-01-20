@@ -45,6 +45,19 @@ function register_block_patterns(){
 				'content' => $product_cards_slider_pattern,
 			] );
 
+		/**
+		* CTA Cover Pattern
+		*/
+		$cta_cover_pattern = get_pattern_content( 'template-parts/patterns/cta-cover-pattern' );
+
+		register_block_pattern( 
+			'besonders/cta-cover', 
+			[
+				'title' => __( 'CTA Cover' , 'besonders-michelbach' ),
+				'categories' => [ 'design-system' ],
+				'content' => $cta_cover_pattern,
+			] );
+
 
 	}
 }

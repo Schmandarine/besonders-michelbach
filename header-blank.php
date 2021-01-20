@@ -27,10 +27,5 @@
 		<?php the_site_navigation(); ?>
 
 		<header id="masthead" class="site-header">
-			<div class="hero-wrapper">
-				<!--<div class="hero-bg-overlay"></div>-->
-				<div class="hero-content site-navigation-container">
-					<h1 class="m-0"><?php the_title(); ?></h1>
-				</div>
-			</div>
+
 		</header><!-- #masthead -->

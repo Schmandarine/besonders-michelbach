@@ -7,12 +7,12 @@
  * @package besonders-michelbach
  */
 
-get_header();
+get_header('blank');
 ?>
 
 	<div id="primary" class="site-search container">
 		<div class="row">
-			<main class="col-lg-8">
+			<main class="col-12">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -48,14 +48,8 @@ get_header();
 		endif;
 		?>
 			</main>
-			<aside class="col-lg-4">
-				<div class="singe_post_sidebar bg-light p-3 d-none d-lg-block">
-					<?php get_sidebar(); ?>
-				</div>
-			</aside>
 		</div>
 	</div><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

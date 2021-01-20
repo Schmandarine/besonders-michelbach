@@ -7,9 +7,13 @@
 
 }
 .hero-cards {
-    margin-top: -185px!important;
+    margin-top: -95px;
     position: relative;
     z-index: 5;
+
+    @include media-breakpoint-up(md) {
+        margin-top: -185px;
+    }
 }
 
 // Minimal Cards
