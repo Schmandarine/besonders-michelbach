@@ -19,10 +19,12 @@
 
 }
 .hero-cards {
+    
     margin-top: -95px;
     position: relative;
     z-index: 5;
     .content {
+        min-height: unset!important;
         align-items: center;
         display: flex!important;
     }

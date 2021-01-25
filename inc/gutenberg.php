@@ -163,7 +163,6 @@ function register_acf_gutenberg() {
 			'title'				=> __('Mini Karte'),
 			'description'		=> __(''),
 			'render_template'   => get_template_directory() . '/template-parts/blocks/minimal_card/minimal_card.php',
-			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/minimal_card/minimal_card.css',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'mode'				=> 'edit',

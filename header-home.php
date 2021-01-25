@@ -15,7 +15,9 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+		<script type="text/javascript">
+			var stylesheet_directory_uri = "<?php echo get_stylesheet_directory_uri(); ?>";
+		</script>
 	<?php wp_head(); ?>
 </head>
 

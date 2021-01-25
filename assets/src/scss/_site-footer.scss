@@ -1,22 +1,30 @@
 .site-footer {
     font-size: .8rem;
-    overflow: hidden;
-
-    .footer-sandkoerner {
-        top: 0;
-        right: 0;
-        height: 100%;
+    .site-footer-navi {
+        text-align: center;
+        list-style-type: none;
         display: flex;
         align-items: center;
-        position: absolute;
-
-        @include media-breakpoint-down(lg) {
-            position: relative;
-            text-align: center;
+        justify-content: center;
+        a {
+            font-weight: bold;
+            color: white;
+            padding: 6px 1em ;
             display: block;
-            padding-top: 0.5rem;
         }
     }
+    
+    .footer-anschrift {
+        img {   
+            max-width: 250px;
+            height: auto;
+        }
+    }
+    #footer-map {
+        z-index: 2;
+    }
+
+    overflow: hidden;
 
     .footer-map-wrapper {
 

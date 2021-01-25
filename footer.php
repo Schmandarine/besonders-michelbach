@@ -18,7 +18,39 @@
 	</div>
 
 	<footer class="site-footer pt-5">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/site-footer@2x.png" alt="" width="1920" height="762" style="max-width: 100%; height: auto">
+		
+		<div class="container-fluid mb-1 p-0">
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<div class="" id="footer-map">
+
+					</div>
+				</div>
+				<div class="col-md-6 col-12 pl-md-5">
+					<div class="footer-anschrift py-4">
+						<?php the_custom_logo(); ?>
+						<div class="anschrift-content">
+							<p class="text-uppercase font-weight-bold">Michelbach GmbH</p>
+							<p>Lupinenstr. 7<br>
+							D-90513 Zirndorf</p>
+							<p>Tel. +49 9127 9006-0<br>
+							Fax +49 9127 9006-10</p>
+							<p>info@michelbach.net</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-primary mb-1">
+			<ul class="site-footer-navi p-0 m-0">
+				<li><a href="#">Impressum</a></li>
+				<li><a href="#">Datenschutz</a></li>
+				<li><a href="#">AGBs</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+		</div>
+		<div class="bg-dark text-center text-light p-2">2020 Michelbach Unternehmensgruppe</div>
+		
 	</footer>
 
 </div><!-- #page -->	
@@ -44,6 +76,7 @@
 	}
 
 </style>
+
 
 </body>
 </html>

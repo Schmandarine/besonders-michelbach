@@ -10,6 +10,12 @@
 .search-form-wrapper {
 	align-items: center;
 	display: none;
+
+	form {
+		display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+	}
 	&.visible {
 		display: flex;
 		background-color: $light;

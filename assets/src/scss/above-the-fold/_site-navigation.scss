@@ -6,12 +6,11 @@
 
   &.scroll-smaller {
     .search-navi-wrapper {
-        transform: scale(0.7) translateY(29px);
-        transform-origin: top right;
+        transform: scale(0.7) translateY(0);
+        transform-origin: right center;
     }
     .site-branding img {
-        max-width: 270px;
-        margin-bottom: -35px;
+      max-width: 200px;
     }
   }
 }
@@ -52,8 +51,11 @@
     height: auto;
     transition: all 250ms;
     padding: 0 2em 0 0;
-    max-width: 350px;
+    max-width: 230px;
     width: 100%;
+    @include media-breakpoint-up(md) {
+      max-width: 350px;
+  }
   }
 }
 
@@ -171,6 +173,7 @@
     width: 100%;
     height: auto;
     z-index: 1;
+    display: none;
     img {
       width: 100%;
     }

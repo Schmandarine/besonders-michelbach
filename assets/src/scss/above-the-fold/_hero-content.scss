@@ -1,5 +1,5 @@
 .site-header {
-    margin-top: -7vw;
+    //margin-top: -7vw;
     position: relative;
     //padding-top: 7vw;
 }
@@ -11,7 +11,7 @@
     background-position: bottom center;
     z-index: 1;
     box-sizing: border-box;
-    min-height: 60vh;
+    //min-height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -35,8 +35,11 @@
 
 .hero-content {
     z-index: 3 !important;
-    padding: 16vh 15px;
+    padding: 95px 15px 165px 15px;
     width: 100%;
+    @include media-breakpoint-up(md) {
+        padding-bottom: 255px;
+    }
 
     h1 {
         color: white;
