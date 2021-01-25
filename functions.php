@@ -144,7 +144,7 @@ add_action( 'widgets_init', 'besonders_brombach_widgets_init' );
  */
 function besonders_brombach_scripts() {
 
-	wp_dequeue_style( 'wp-block-library' );
+	//wp_dequeue_style( 'wp-block-library' );
     //wp_dequeue_style( 'wp-block-library-theme' );
 	wp_dequeue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
 	//if ( !is_admin() ) wp_deregister_script('jquery');
@@ -156,8 +156,11 @@ function besonders_brombach_scripts() {
 	
 	if ( is_admin() ) wp_enqueue_style( 'besonders-michelbach-gutenberg', get_template_directory_uri(  ) . '/assets/dist/css/custom-gutenberg.css', array() );
 	
+	wp_enqueue_script( 'slick-slider', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick.js', array(), '' , true );
+	
 	wp_enqueue_script( 'site-navigation', get_template_directory_uri() . '/assets/src/js/site-navigation.js', array(), '' , true );
 	wp_enqueue_script( 'jquery-scripts', get_template_directory_uri() . '/assets/src/js/jquery-scripts.js', array( 'jquery' ), '' , true );
+	wp_enqueue_script( 'block-custom_content_view', get_template_directory_uri() . '/assets/src/js/custom_content_view.js', array( 'jquery', 'slick-slider' ), '' , true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -166,7 +169,7 @@ function besonders_brombach_scripts() {
 add_action( 'wp_enqueue_scripts', 'besonders_brombach_scripts' );
 
 function add_gutenberg_in_footer() {
-	wp_enqueue_style( 'wp-block-library' );
+	//wp_enqueue_style( 'wp-block-library' );
 	//wp_enqueue_style( 'wp-block-library-theme' );
 };
 add_action( 'get_footer', 'add_gutenberg_in_footer' );
