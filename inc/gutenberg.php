@@ -150,7 +150,6 @@ function register_acf_gutenberg() {
 			'title'				=> __('Akkordeon'),
 			'description'		=> __(''),
 			'render_template'   => get_template_directory() . '/template-parts/blocks/accordeon/accordeon.php',
-			'enqueue_style'     => get_template_directory_uri() . '/template-parts/blocks/accordeon/accordeon.css',
 			'enqueue_script'    => get_template_directory_uri() . '/template-parts/blocks/accordeon/accordeon.js',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
