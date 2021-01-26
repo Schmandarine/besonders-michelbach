@@ -192,7 +192,7 @@ endif;
 						</div>
 
 						<div class="search-navi-wrapper ">
-							<a class="searchform-trigger" id="search-trigger"><img src="<?php echo get_template_directory_uri(); ?>/img/lupe-icon.svg"></a>
+							<a class="searchform-trigger" id="search-trigger"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/lupe-icon.svg"></a>
 							<div id="search-form-wrapper" class="search-form-wrapper"><?php echo get_search_form(); ?></div>
 
 							<div class="button-wrapper menu-toggle"><!-- Hamburger Menu -->
