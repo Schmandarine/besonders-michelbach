@@ -1,7 +1,11 @@
+var ImageminPlugin = require('imagemin-webpack-plugin').default
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 const path = require('path');
 
 module.exports = {
-    mode: "production",
+    mode: "development",
     context: path.resolve(__dirname, "assets"),
     output: {
         filename: 'main.bundle.js',
@@ -9,12 +13,33 @@ module.exports = {
     },
     watch: true,
     module: {
-        rules: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                }
             }
-        }]
-    }
-}
+        ]
+    },
+    plugins: [
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, "assets/src/img"),
+                    to: path.resolve(__dirname, "assets/dist/img")
+                }
+            ]
+        }),
+        new ImageminPlugin({
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            plugins: [
+                imageminMozjpeg({
+                    quality: 20,
+                    progressive: true
+                })
+            ]
+        })
+    ]
+};
