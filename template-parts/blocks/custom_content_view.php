@@ -57,8 +57,18 @@ if( $columns ) {
     $colWidth = "";
 }
 
+?>
 
-// Query Build
+
+
+
+<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+    <div class="container">
+        <div class="row" data-slick='<?php the_field("slider_einstellungen"); ?>'>
+
+
+<?php
+ // Query Build
 
 // Alle Beiträge einer Kategorie anzeigen.
 if($show_all_cpt) {
@@ -96,21 +106,23 @@ if($show_all_cpt) {
             if( $image ) {
                 $img_attach = wp_get_attachment_image( $image, $size );
             } else {
-                $img_attach ='<img widt="400" class="attachment-full size-full" height="500" src="'.get_template_directory_uri(  ).'/img/card-default.png" >';
+                $img_attach = false;
             }
-            $card_text = get_sub_field('text') ?: "default";
+            $card_text = get_sub_field('text')?:false;
             $card_link = get_sub_field('link');
             ?>
 
 
             <!-- VIEW -->
-            <div class="minimal_card h-100">
+            <div class="minimal_card h-100 p-2">
 
                 <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
-                    <?php echo $img_attach ?>
-                    <div class="d-flex flex-row">
-                        <span class="content d-block p-3 lead"><?php echo $card_text ?></span>
-                    </div>
+                    <?php echo $img_attach;
+                    if($card_text): ?>
+                        <div class="d-flex flex-row">
+                            <span class="content d-block p-3 lead"><?php echo $card_text ?></span>
+                        </div>
+                    <?php endif; ?>
                 </a>
 
             </div>
@@ -123,12 +135,6 @@ if($show_all_cpt) {
 }
 ?>
 
-
-
-
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-    <div class="container">
-        <div class="row" data-slick='<?php the_field("slider_einstellungen"); ?>'>
 
             <?php
                 if($query):

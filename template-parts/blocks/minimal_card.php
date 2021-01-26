@@ -16,7 +16,7 @@ if( !empty($block['align']) ) {
 }
 
 $image = get_field('img')['id'];
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
+$size = 'karten-beitragsbild'; // (thumbnail, medium, large, full or custom size)
 if( $image ) {
     $img_attach = wp_get_attachment_image( $image, $size );
 }

@@ -6849,8 +6849,14 @@ h3,
 h2 {
   font-weight: bold;
   letter-spacing: .2px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #007ab9;
+}
+
+@media (min-width: 782px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 b,
@@ -7028,10 +7034,6 @@ hr {
 
 .wp-block-cover {
   color: white;
-}
-
-.wp-block-group {
-  margin-top: 4rem;
 }
 
 .wp-block-cover,

@@ -4,7 +4,6 @@ import { jqueryCustomScripts } from './js/jquery-scripts';
 import { slickSliderScript } from './js/slick-slider-script';
 import { accordionComponent } from './js/accordeon';
 
-
 siteNavigationComponent();
 mapLeafletComponent();
 
