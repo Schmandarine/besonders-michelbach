@@ -1,6 +1,7 @@
 var ImageminPlugin = require('imagemin-webpack-plugin').default
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const imageminSvgo = require('imagemin-svgo');
 
 const path = require('path');
 
@@ -36,8 +37,13 @@ module.exports = {
             test: /\.(jpe?g|png|gif|svg)$/i,
             plugins: [
                 imageminMozjpeg({
-                    quality: 20,
+                    quality: 60,
                     progressive: true
+                }),
+                imageminSvgo({
+                    plugins: [
+                        { removeViewBox: false }
+                    ]
                 })
             ]
         })
