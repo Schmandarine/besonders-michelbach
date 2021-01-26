@@ -147,27 +147,18 @@ function besonders_brombach_scripts() {
 	//wp_dequeue_style( 'wp-block-library' );
     //wp_dequeue_style( 'wp-block-library-theme' );
 	wp_dequeue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
+
 	//if ( !is_admin() ) wp_deregister_script('jquery');
+
 	if ( is_admin() ) wp_enqueue_style( 'besonders-michelbach-gutenberg', get_template_directory_uri(  ) . '/assets/dist/css/custom-gutenberg.css', array() );
 	wp_style_add_data( 'besonders-michelbach-style', 'rtl', 'replace' );
 
 	wp_enqueue_style( 'besonders-michelbach-bootstrap', get_template_directory_uri( ) . '/assets/dist/css/custom-bootstrap.css' );
 	wp_enqueue_style( 'besonders-michelbach-main-style', get_template_directory_uri( ) . '/assets/dist/css/style.css' );
 	
-	wp_enqueue_script( 'site-navigation', get_template_directory_uri() . '/assets/src/js/site-navigation.js', array(), '' , true );
-	wp_enqueue_script( 'jquery-scripts', get_template_directory_uri() . '/assets/src/js/jquery-scripts.js', array( 'jquery' ), '' , true );
-	wp_enqueue_script( 'leaflet-scripts', get_template_directory_uri() . '/assets/src/js/map-leaflet.js', array( 'leaftlet-vendor-script' ), '' , true );
-
-	// Gutenberg Blocks JS
-	wp_enqueue_script( 'block-custom-content-view', get_template_directory_uri() . '/assets/src/js/custom_content_view.js', array( 'jquery', 'slick-slider-vendor' ), '' , true );
-
-
-	// Vendor JS Libs
-	wp_enqueue_script( 'slick-slider-vendor', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick.js', array(), '' , true );
-	wp_enqueue_script( 'leaftlet-vendor-script', get_template_directory_uri() . '/node_modules/leaflet/dist/leaflet.js', array(), '' , true );
-	wp_enqueue_style( 'leaflet-vendor-style', get_template_directory_uri( ) . '/node_modules/leaflet/dist/leaflet.css' );
+	wp_enqueue_script( 'custom-scripts-bundle', get_template_directory_uri() . '/assets/dist/main.bundle.js', array('jquery'), '' , true );
+	wp_enqueue_style( 'leaflet-vendor-style', 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css' );
 	
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

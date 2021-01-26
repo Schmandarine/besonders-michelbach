@@ -4,13 +4,23 @@
   "description": "Jan Brombachs starter theme for Besonders Sein GmbH",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --config webpack.config.js"
   },
   "author": "Jan Brombach",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
     "leaflet": "^1.7.1",
     "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
   }
 }
