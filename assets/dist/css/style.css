@@ -235,7 +235,16 @@ ul li {
 }
 
 .minimal_card .content {
-  min-height: 120px;
+  min-height: 102px;
+  font-size: 1.2rem;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .minimal_card a {

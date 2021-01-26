@@ -33,9 +33,9 @@ $card_link = get_field('link');
         <div class="d-flex flex-row">
             <?php 
                 if( $card_link ) : ?>
-                <span class="content d-block p-3 lead"><?php echo $card_text ?></span>
+                <span class="content p-3"><?php echo $card_text ?></span>
             <?php else : ?>
-                <div class="content p-3 lead"><?php echo $card_text ?></div>
+                <div class="content p-3"><?php echo $card_text ?></div>
             <?php endif; ?>
         </div>
     </a>

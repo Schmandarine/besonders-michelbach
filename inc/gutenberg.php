@@ -149,8 +149,7 @@ function register_acf_gutenberg() {
 			'name'				=> 'accordeon',
 			'title'				=> __('Akkordeon'),
 			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/accordeon/accordeon.php',
-			'enqueue_script'    => get_template_directory_uri() . '/template-parts/blocks/accordeon/accordeon.js',
+			'render_template'   => get_template_directory() . '/template-parts/blocks/accordeon.php',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'mode'				=> 'edit',
@@ -161,11 +160,11 @@ function register_acf_gutenberg() {
 			'name'				=> 'minimal_card',
 			'title'				=> __('Mini Karte'),
 			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/minimal_card/minimal_card.php',
+			'render_template'   => get_template_directory() . '/template-parts/blocks/minimal_card.php',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'mode'				=> 'edit',
-			'supports' => array( 'mode' => false ,'align' => false )
+			'supports' => array( 'mode' => true ,'align' => false )
 		));
 
 
@@ -173,7 +172,7 @@ function register_acf_gutenberg() {
 			'name'				=> 'custom_content_view',
 			'title'				=> __('Eigenen Inhalt anzeigen'),
 			'description'		=> __(''),
-			'render_template'   => get_template_directory() . '/template-parts/blocks/custom_content_view/custom_content_view.php',
+			'render_template'   => get_template_directory() . '/template-parts/blocks/custom_content_view.php',
 			'category'			=> 'formatting',
 			'icon'				=> 'admin-comments',
 			'mode'				=> 'edit',

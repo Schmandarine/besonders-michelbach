@@ -19,7 +19,7 @@ if( $image ) {
     <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
         <?php echo $img_attach ?>
         <div class="content p-3">
-            <span class="lead d-block"><?php echo $card_title; ?></span>
+            <span class=""><?php echo $card_title; ?></span>
             <!-- <p><?php echo $card_excerpt; ?></p> -->
         </div>
     </a>
