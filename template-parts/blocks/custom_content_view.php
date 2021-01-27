@@ -37,7 +37,7 @@ if( !empty($block['anchor']) ) {
 }
 
 // Grid oder Slider Klasse
-$className = 'cardsview-wrapper mb-5 cards-'.$layout;
+$className = 'cardsview-wrapper mb-5 cards-'.$layout.' cards-'.$choose_cpt;
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }

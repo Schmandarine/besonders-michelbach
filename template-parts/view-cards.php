@@ -2,7 +2,8 @@
 
 $card_link = get_the_permalink();
 $card_title = get_the_title();
-$card_excerpt = get_the_excerpt( );
+$post_excerpt = get_the_excerpt( )?:false;
+$card_description = get_field('paragraph', get_the_ID()) ?: false;
 
 $image = get_post_thumbnail_id();
 $size = 'karten-beitragsbild'; // (thumbnail, medium, large, full or custom size)
@@ -20,7 +21,7 @@ if( $image ) {
         <?php echo $img_attach ?>
         <div class="content p-3">
             <span class=""><?php echo $card_title; ?></span>
-            <!-- <p><?php echo $card_excerpt; ?></p> -->
+            <span class="card-excerpt"><?php echo $card_description; ?></span>
         </div>
     </a>
 

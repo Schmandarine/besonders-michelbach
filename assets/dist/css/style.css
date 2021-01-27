@@ -91,8 +91,8 @@ p {
 }
 
 .box-shadow {
-  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 1px 11px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 1px 11px rgba(0, 0, 0, 0.2);
 }
 
 .lead {
@@ -196,6 +196,14 @@ ul li {
   position: relative;
 }
 
+.cards-references .card-excerpt {
+  text-transform: none;
+  color: #007ab9;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 9px 0;
+}
+
 .custom_card img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -249,9 +257,13 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .minimal_card img {
@@ -262,6 +274,10 @@ ul li {
 .minimal_card a {
   color: #646567;
   text-transform: uppercase;
+}
+
+.minimal_card a:hover, .minimal_card a:active {
+  text-decoration: none;
 }
 
 .flip-box-block .card:hover {
