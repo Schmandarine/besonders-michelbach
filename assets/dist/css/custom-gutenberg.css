@@ -6877,6 +6877,13 @@ p {
 .box-shadow {
   -webkit-box-shadow: 3px 1px 11px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 1px 11px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.box-shadow:hover, .box-shadow:focus, .box-shadow:active {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .lead {

@@ -19,9 +19,13 @@ if( $image ) {
 
     <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
         <?php echo $img_attach ?>
-        <div class="content p-3">
-            <span class=""><?php echo $card_title; ?></span>
-            <span class="card-excerpt"><?php echo $card_description; ?></span>
+        <div class="content p-3 position-relative">
+            <div class="card-link-chevron"></div>
+            <span><?php echo $card_title; ?></span>
+            <?php 
+                if( $card_description ) : ?>
+                    <span class="card-excerpt"><?php echo $card_description; ?></span>
+                <?php endif; ?>
         </div>
     </a>
 

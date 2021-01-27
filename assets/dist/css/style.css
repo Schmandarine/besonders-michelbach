@@ -93,6 +93,13 @@ p {
 .box-shadow {
   -webkit-box-shadow: 3px 1px 11px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 1px 11px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.box-shadow:hover, .box-shadow:focus, .box-shadow:active {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .lead {
@@ -269,6 +276,10 @@ ul li {
 .minimal_card img {
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -webkit-filter: saturate(0.8);
+          filter: saturate(0.8);
 }
 
 .minimal_card a {
@@ -278,6 +289,16 @@ ul li {
 
 .minimal_card a:hover, .minimal_card a:active {
   text-decoration: none;
+}
+
+.minimal_card a:hover img, .minimal_card a:active img {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+}
+
+.minimal_card a:hover .card-link-chevron, .minimal_card a:active .card-link-chevron {
+  right: 1rem;
+  opacity: 1;
 }
 
 .flip-box-block .card:hover {
@@ -400,6 +421,24 @@ ul li {
   font-weight: bold;
   margin-left: auto;
   font-size: 1.3em;
+}
+
+.card-link-chevron {
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2LjgiIGhlaWdodD0iMTEuNiIgdmlld0JveD0iMCAwIDYuOCAxMS42Ij48cGF0aCBkPSJNOS4xNjMsNC41MTZjLjQxOC40MDgsNC41LDQuNyw0LjUsNC43YTEuMDk0LDEuMDk0LDAsMCwxLDAsMS41NzZzLTQuMDg0LDQuMjg5LTQuNSw0LjdhMS4xODgsMS4xODgsMCwwLDEtMS42MTUsMCwxLjA2MywxLjA2MywwLDAsMSwwLTEuNTc0TDExLjMsMTAsNy41NDgsNi4wOTJhMS4wNjYsMS4wNjYsMCwwLDEsMC0xLjU3NkExLjE4NywxLjE4NywwLDAsMSw5LjE2Myw0LjUxNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03LjIgLTQuMTk5KSIgZmlsbD0iI2RhZGFkYSIvPjwvc3ZnPg==);
 }
 
 .site-footer {

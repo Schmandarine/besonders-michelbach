@@ -30,7 +30,8 @@ $card_link = get_field('link');
 
     <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
         <?php echo $img_attach ?>
-        <div class="d-flex flex-row">
+        <div class="d-flex flex-row position-relative">
+            <div class="card-link-chevron"></div>
             <?php 
                 if( $card_link ) : ?>
                 <span class="content p-3"><?php echo $card_text ?></span>
