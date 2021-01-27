@@ -114,7 +114,7 @@ if($show_all_cpt) {
 
 
             <!-- VIEW -->
-            <div class="minimal_card h-100 p-2">
+            <div class="h-100 p-2">
 
                 <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
                     <?php echo $img_attach;

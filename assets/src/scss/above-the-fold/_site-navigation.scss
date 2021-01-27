@@ -68,8 +68,12 @@
     margin: 0;
     position: relative;
 
+
     & > a {
       width: 50%;
+      @include media-breakpoint-down(md){
+        width: 100%;
+      }
     }
   }
 
@@ -92,13 +96,13 @@
     transition: all 250ms;
     position: absolute;
     width: 100%;
-    background: rgba(0,122,185,0.9);
+    background: rgba(0, 122, 185, .97);
     
 
     &.active {
       height: 100vh;
       overflow: auto;
-      padding-top: 9vw;
+      padding: 40px 0;
     }
 
 
@@ -131,6 +135,12 @@
       margin: 0;
       top: 0;
       z-index: 2;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        width: 100%;
+        margin: 0.6rem 0 1.8rem 0;
+      }
 
       li {
         margin: 0;
@@ -176,5 +186,18 @@
     display: none;
     img {
       width: 100%;
+    }
+  }
+
+
+
+  /* Maximum aspect ratio */
+  @media (min-aspect-ratio: 14/7) {
+      #site_navigation_menu > li {
+      position: static;
+    }
+    .menu-item-has-children .sub-menu {
+      //transform: translateY(-50%);
+      top: 40px;
     }
   }
