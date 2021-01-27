@@ -20,9 +20,14 @@
         align-items: center;
         display: flex!important;
     }
+    img {
+        height: 22vw;
+        max-height: 250px;
+    }
 
     @include media-breakpoint-up(md) {
         margin-top: -185px;
+        margin-bottom: 4em;
     }
 }
 .logo-cards {
@@ -43,7 +48,7 @@
     }
     img {
         object-fit: cover;
-        height: 250px;
+        //height: 250px;
     }
     a {
     color: $dark;
