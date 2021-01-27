@@ -23,7 +23,7 @@ h3,
 .h3 {
     text-transform: uppercase;
     word-break: normal;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     @include media-breakpoint-down(xs) {
         word-break: break-word;

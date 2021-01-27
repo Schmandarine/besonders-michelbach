@@ -6832,7 +6832,7 @@ h3,
 .h3 {
   text-transform: uppercase;
   word-break: normal;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 575.98px) {
