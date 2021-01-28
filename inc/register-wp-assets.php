@@ -34,3 +34,35 @@ function add_cpt_references() {
 	register_post_type( 'references', $args );
 }
 add_action( 'init', 'add_cpt_references', 0 );
+
+
+//create a custom taxonomy name it "type" for your posts
+function add_cstm_tax_references() {
+	       
+        register_taxonomy( 'anwendungsbereiche' ,array('references'), array(
+          'hierarchical' => true,
+          'labels' => array(
+                'name' => _x( 'Anwendungsbereiche', 'besonders-michelbach' ),
+              ),
+          'show_ui' => true,
+          'show_admin_column' => true,
+          'show_in_rest' => true,
+          'query_var' => true,
+          'rewrite' => array( 'slug' => 'anwendungsbereiche' ),
+        ));
+
+        register_taxonomy( 'funktionen' ,array('references'), array(
+                'hierarchical' => true,
+                'labels' => array(
+                      'name' => _x( 'Funktionen', 'besonders-michelbach' ),
+                    ),
+                'show_ui' => true,
+                'show_admin_column' => true,
+                'show_in_rest' => true,
+                'query_var' => true,
+                'rewrite' => array( 'slug' => 'funktionen' ),
+              ));
+
+}
+// Let us create Taxonomy for Custom Post Type
+add_action( 'init', 'add_cstm_tax_references', 0 );

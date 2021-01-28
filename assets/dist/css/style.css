@@ -203,12 +203,70 @@ ul li {
   position: relative;
 }
 
+.cards-references img {
+  position: relative;
+}
+
+.cards-references img:after {
+  content: '';
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  position: absolute;
+}
+
 .cards-references .card-excerpt {
   text-transform: none;
   color: #007ab9;
   font-size: 1.5rem;
   line-height: 1.2;
   padding: 9px 0;
+}
+
+.cards-references .funktionen-icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards-references .funktionen-icons-wrapper .funktion-icon-item {
+  border: 1px solid #a7c6e2;
+  border-radius: 9px;
+  padding: 0.7rem;
+  width: 3rem;
+  height: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px 15px 0 0px;
+}
+
+.cards-references .card-flags-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cards-references .card-flags-wrapper .card-flag-item {
+  color: white;
+  font-weight: 600;
+  padding: 4px 15px;
+  text-align: right;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 .custom_card img {
@@ -925,6 +983,21 @@ ul li {
           align-items: center;
   height: 70vh;
   max-height: 670px;
+  position: relative;
+}
+
+.hero-bg-img:after {
+  content: '';
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #007ab9;
+  z-index: 0;
+  opacity: 0.7;
+  visibility: hidden;
 }
 
 .hero-content {
@@ -939,25 +1012,25 @@ ul li {
   }
 }
 
-.hero-content h1 {
+.site h1 {
   color: white;
   font-weight: 800;
   font-size: 8vw;
 }
 
 @media (min-width: 993px) {
-  .hero-content h1 {
+  .site h1 {
     font-size: 3em;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .hero-content h1 {
+  .site h1 {
     font-size: 2.3em;
   }
 }
 
-.hero-content h1 small {
+.site h1 small {
   color: #a7c6e2;
   text-transform: none;
   word-break: break-word;
@@ -1236,6 +1309,10 @@ ul li {
   display: block;
 }
 
+.slick-dots li::before {
+  display: none;
+}
+
 .slick-dots li button {
   content: "";
   padding: 0;
@@ -1470,6 +1547,54 @@ hr {
 
 .has-dark-background-color {
   background-color: #646567 !important;
+}
+
+.has-lightblue-color {
+  color: #DAE9F6 !important;
+}
+
+.has-lightblue-background-color {
+  background-color: #DAE9F6 !important;
+}
+
+.has-multifunktionssystem-color {
+  color: #FFCC00 !important;
+}
+
+.has-multifunktionssystem-background-color {
+  background-color: #FFCC00 !important;
+}
+
+.has-luftbefeuchtung-color {
+  color: #00b0f0 !important;
+}
+
+.has-luftbefeuchtung-background-color {
+  background-color: #00b0f0 !important;
+}
+
+.has-waermerueckgewinnung-color {
+  color: #ea3833 !important;
+}
+
+.has-waermerueckgewinnung-background-color {
+  background-color: #ea3833 !important;
+}
+
+.has-rueckkuehlung-color {
+  color: #00cf94 !important;
+}
+
+.has-rueckkuehlung-background-color {
+  background-color: #00cf94 !important;
+}
+
+.has-umkehrosmoseanlagen-color {
+  color: #92d050 !important;
+}
+
+.has-umkehrosmoseanlagen-background-color {
+  background-color: #92d050 !important;
 }
 
 .wp-block-cover {

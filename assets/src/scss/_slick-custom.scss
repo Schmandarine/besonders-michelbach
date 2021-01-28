@@ -7,13 +7,18 @@ $slick-loader-path: "../";
 .slick-arrow.slick-hidden {
     display: block;
 }
-.slick-dots li button {
+.slick-dots {
+    li::before {
+    display: none;
+}
+ li button {
     content: "";
     padding: 0;
     width: 20px;
     height: 5px;
     background-color: $secondary;
     opacity: 1;
+}
 }
 
 .slick-dots li button::before {

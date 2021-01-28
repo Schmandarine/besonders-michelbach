@@ -20,6 +20,12 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #646567;
+  --lightblue: #DAE9F6;
+  --multifunktionssystem: #FFCC00;
+  --luftbefeuchtung: #00b0f0;
+  --waermerueckgewinnung: #ea3833;
+  --rueckkuehlung: #00cf94;
+  --umkehrosmoseanlagen: #92d050;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 782px;
@@ -2672,6 +2678,240 @@ fieldset:disabled a.btn {
           box-shadow: 0 0 0 0.2rem rgba(123, 124, 126, 0.5);
 }
 
+.btn-lightblue {
+  color: #212529;
+  background-color: #DAE9F6;
+  border-color: #DAE9F6;
+}
+
+.btn-lightblue:hover {
+  color: #212529;
+  background-color: #bbd7ef;
+  border-color: #b1d1ec;
+}
+
+.btn-lightblue:focus, .btn-lightblue.focus {
+  color: #212529;
+  background-color: #bbd7ef;
+  border-color: #b1d1ec;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(190, 204, 215, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(190, 204, 215, 0.5);
+}
+
+.btn-lightblue.disabled, .btn-lightblue:disabled {
+  color: #212529;
+  background-color: #DAE9F6;
+  border-color: #DAE9F6;
+}
+
+.btn-lightblue:not(:disabled):not(.disabled):active, .btn-lightblue:not(:disabled):not(.disabled).active,
+.show > .btn-lightblue.dropdown-toggle {
+  color: #212529;
+  background-color: #b1d1ec;
+  border-color: #a7cbea;
+}
+
+.btn-lightblue:not(:disabled):not(.disabled):active:focus, .btn-lightblue:not(:disabled):not(.disabled).active:focus,
+.show > .btn-lightblue.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(190, 204, 215, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(190, 204, 215, 0.5);
+}
+
+.btn-multifunktionssystem {
+  color: #212529;
+  background-color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.btn-multifunktionssystem:hover {
+  color: #212529;
+  background-color: #d9ad00;
+  border-color: #cca300;
+}
+
+.btn-multifunktionssystem:focus, .btn-multifunktionssystem.focus {
+  color: #212529;
+  background-color: #d9ad00;
+  border-color: #cca300;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 179, 6, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(222, 179, 6, 0.5);
+}
+
+.btn-multifunktionssystem.disabled, .btn-multifunktionssystem:disabled {
+  color: #212529;
+  background-color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.btn-multifunktionssystem:not(:disabled):not(.disabled):active, .btn-multifunktionssystem:not(:disabled):not(.disabled).active,
+.show > .btn-multifunktionssystem.dropdown-toggle {
+  color: #212529;
+  background-color: #cca300;
+  border-color: #bf9900;
+}
+
+.btn-multifunktionssystem:not(:disabled):not(.disabled):active:focus, .btn-multifunktionssystem:not(:disabled):not(.disabled).active:focus,
+.show > .btn-multifunktionssystem.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 179, 6, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(222, 179, 6, 0.5);
+}
+
+.btn-luftbefeuchtung {
+  color: #fff;
+  background-color: #00b0f0;
+  border-color: #00b0f0;
+}
+
+.btn-luftbefeuchtung:hover {
+  color: #fff;
+  background-color: #0094ca;
+  border-color: #008bbd;
+}
+
+.btn-luftbefeuchtung:focus, .btn-luftbefeuchtung.focus {
+  color: #fff;
+  background-color: #0094ca;
+  border-color: #008bbd;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 188, 242, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(38, 188, 242, 0.5);
+}
+
+.btn-luftbefeuchtung.disabled, .btn-luftbefeuchtung:disabled {
+  color: #fff;
+  background-color: #00b0f0;
+  border-color: #00b0f0;
+}
+
+.btn-luftbefeuchtung:not(:disabled):not(.disabled):active, .btn-luftbefeuchtung:not(:disabled):not(.disabled).active,
+.show > .btn-luftbefeuchtung.dropdown-toggle {
+  color: #fff;
+  background-color: #008bbd;
+  border-color: #0081b0;
+}
+
+.btn-luftbefeuchtung:not(:disabled):not(.disabled):active:focus, .btn-luftbefeuchtung:not(:disabled):not(.disabled).active:focus,
+.show > .btn-luftbefeuchtung.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 188, 242, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(38, 188, 242, 0.5);
+}
+
+.btn-waermerueckgewinnung {
+  color: #fff;
+  background-color: #ea3833;
+  border-color: #ea3833;
+}
+
+.btn-waermerueckgewinnung:hover {
+  color: #fff;
+  background-color: #e01d17;
+  border-color: #d41b16;
+}
+
+.btn-waermerueckgewinnung:focus, .btn-waermerueckgewinnung.focus {
+  color: #fff;
+  background-color: #e01d17;
+  border-color: #d41b16;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(237, 86, 82, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(237, 86, 82, 0.5);
+}
+
+.btn-waermerueckgewinnung.disabled, .btn-waermerueckgewinnung:disabled {
+  color: #fff;
+  background-color: #ea3833;
+  border-color: #ea3833;
+}
+
+.btn-waermerueckgewinnung:not(:disabled):not(.disabled):active, .btn-waermerueckgewinnung:not(:disabled):not(.disabled).active,
+.show > .btn-waermerueckgewinnung.dropdown-toggle {
+  color: #fff;
+  background-color: #d41b16;
+  border-color: #c91a15;
+}
+
+.btn-waermerueckgewinnung:not(:disabled):not(.disabled):active:focus, .btn-waermerueckgewinnung:not(:disabled):not(.disabled).active:focus,
+.show > .btn-waermerueckgewinnung.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(237, 86, 82, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(237, 86, 82, 0.5);
+}
+
+.btn-rueckkuehlung {
+  color: #fff;
+  background-color: #00cf94;
+  border-color: #00cf94;
+}
+
+.btn-rueckkuehlung:hover {
+  color: #fff;
+  background-color: #00a979;
+  border-color: #009c70;
+}
+
+.btn-rueckkuehlung:focus, .btn-rueckkuehlung.focus {
+  color: #fff;
+  background-color: #00a979;
+  border-color: #009c70;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 214, 164, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(38, 214, 164, 0.5);
+}
+
+.btn-rueckkuehlung.disabled, .btn-rueckkuehlung:disabled {
+  color: #fff;
+  background-color: #00cf94;
+  border-color: #00cf94;
+}
+
+.btn-rueckkuehlung:not(:disabled):not(.disabled):active, .btn-rueckkuehlung:not(:disabled):not(.disabled).active,
+.show > .btn-rueckkuehlung.dropdown-toggle {
+  color: #fff;
+  background-color: #009c70;
+  border-color: #008f66;
+}
+
+.btn-rueckkuehlung:not(:disabled):not(.disabled):active:focus, .btn-rueckkuehlung:not(:disabled):not(.disabled).active:focus,
+.show > .btn-rueckkuehlung.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 214, 164, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(38, 214, 164, 0.5);
+}
+
+.btn-umkehrosmoseanlagen {
+  color: #212529;
+  background-color: #92d050;
+  border-color: #92d050;
+}
+
+.btn-umkehrosmoseanlagen:hover {
+  color: #212529;
+  background-color: #7fc535;
+  border-color: #79bb32;
+}
+
+.btn-umkehrosmoseanlagen:focus, .btn-umkehrosmoseanlagen.focus {
+  color: #212529;
+  background-color: #7fc535;
+  border-color: #79bb32;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(129, 182, 74, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(129, 182, 74, 0.5);
+}
+
+.btn-umkehrosmoseanlagen.disabled, .btn-umkehrosmoseanlagen:disabled {
+  color: #212529;
+  background-color: #92d050;
+  border-color: #92d050;
+}
+
+.btn-umkehrosmoseanlagen:not(:disabled):not(.disabled):active, .btn-umkehrosmoseanlagen:not(:disabled):not(.disabled).active,
+.show > .btn-umkehrosmoseanlagen.dropdown-toggle {
+  color: #212529;
+  background-color: #79bb32;
+  border-color: #72b12f;
+}
+
+.btn-umkehrosmoseanlagen:not(:disabled):not(.disabled):active:focus, .btn-umkehrosmoseanlagen:not(:disabled):not(.disabled).active:focus,
+.show > .btn-umkehrosmoseanlagen.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(129, 182, 74, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(129, 182, 74, 0.5);
+}
+
 .btn-outline-primary {
   color: #007ab9;
   border-color: #007ab9;
@@ -2944,6 +3184,210 @@ fieldset:disabled a.btn {
           box-shadow: 0 0 0 0.2rem rgba(100, 101, 103, 0.5);
 }
 
+.btn-outline-lightblue {
+  color: #DAE9F6;
+  border-color: #DAE9F6;
+}
+
+.btn-outline-lightblue:hover {
+  color: #212529;
+  background-color: #DAE9F6;
+  border-color: #DAE9F6;
+}
+
+.btn-outline-lightblue:focus, .btn-outline-lightblue.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(218, 233, 246, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(218, 233, 246, 0.5);
+}
+
+.btn-outline-lightblue.disabled, .btn-outline-lightblue:disabled {
+  color: #DAE9F6;
+  background-color: transparent;
+}
+
+.btn-outline-lightblue:not(:disabled):not(.disabled):active, .btn-outline-lightblue:not(:disabled):not(.disabled).active,
+.show > .btn-outline-lightblue.dropdown-toggle {
+  color: #212529;
+  background-color: #DAE9F6;
+  border-color: #DAE9F6;
+}
+
+.btn-outline-lightblue:not(:disabled):not(.disabled):active:focus, .btn-outline-lightblue:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-lightblue.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(218, 233, 246, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(218, 233, 246, 0.5);
+}
+
+.btn-outline-multifunktionssystem {
+  color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.btn-outline-multifunktionssystem:hover {
+  color: #212529;
+  background-color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.btn-outline-multifunktionssystem:focus, .btn-outline-multifunktionssystem.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.5);
+}
+
+.btn-outline-multifunktionssystem.disabled, .btn-outline-multifunktionssystem:disabled {
+  color: #FFCC00;
+  background-color: transparent;
+}
+
+.btn-outline-multifunktionssystem:not(:disabled):not(.disabled):active, .btn-outline-multifunktionssystem:not(:disabled):not(.disabled).active,
+.show > .btn-outline-multifunktionssystem.dropdown-toggle {
+  color: #212529;
+  background-color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.btn-outline-multifunktionssystem:not(:disabled):not(.disabled):active:focus, .btn-outline-multifunktionssystem:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-multifunktionssystem.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.5);
+}
+
+.btn-outline-luftbefeuchtung {
+  color: #00b0f0;
+  border-color: #00b0f0;
+}
+
+.btn-outline-luftbefeuchtung:hover {
+  color: #fff;
+  background-color: #00b0f0;
+  border-color: #00b0f0;
+}
+
+.btn-outline-luftbefeuchtung:focus, .btn-outline-luftbefeuchtung.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 176, 240, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 176, 240, 0.5);
+}
+
+.btn-outline-luftbefeuchtung.disabled, .btn-outline-luftbefeuchtung:disabled {
+  color: #00b0f0;
+  background-color: transparent;
+}
+
+.btn-outline-luftbefeuchtung:not(:disabled):not(.disabled):active, .btn-outline-luftbefeuchtung:not(:disabled):not(.disabled).active,
+.show > .btn-outline-luftbefeuchtung.dropdown-toggle {
+  color: #fff;
+  background-color: #00b0f0;
+  border-color: #00b0f0;
+}
+
+.btn-outline-luftbefeuchtung:not(:disabled):not(.disabled):active:focus, .btn-outline-luftbefeuchtung:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-luftbefeuchtung.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 176, 240, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 176, 240, 0.5);
+}
+
+.btn-outline-waermerueckgewinnung {
+  color: #ea3833;
+  border-color: #ea3833;
+}
+
+.btn-outline-waermerueckgewinnung:hover {
+  color: #fff;
+  background-color: #ea3833;
+  border-color: #ea3833;
+}
+
+.btn-outline-waermerueckgewinnung:focus, .btn-outline-waermerueckgewinnung.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(234, 56, 51, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(234, 56, 51, 0.5);
+}
+
+.btn-outline-waermerueckgewinnung.disabled, .btn-outline-waermerueckgewinnung:disabled {
+  color: #ea3833;
+  background-color: transparent;
+}
+
+.btn-outline-waermerueckgewinnung:not(:disabled):not(.disabled):active, .btn-outline-waermerueckgewinnung:not(:disabled):not(.disabled).active,
+.show > .btn-outline-waermerueckgewinnung.dropdown-toggle {
+  color: #fff;
+  background-color: #ea3833;
+  border-color: #ea3833;
+}
+
+.btn-outline-waermerueckgewinnung:not(:disabled):not(.disabled):active:focus, .btn-outline-waermerueckgewinnung:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-waermerueckgewinnung.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(234, 56, 51, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(234, 56, 51, 0.5);
+}
+
+.btn-outline-rueckkuehlung {
+  color: #00cf94;
+  border-color: #00cf94;
+}
+
+.btn-outline-rueckkuehlung:hover {
+  color: #fff;
+  background-color: #00cf94;
+  border-color: #00cf94;
+}
+
+.btn-outline-rueckkuehlung:focus, .btn-outline-rueckkuehlung.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 207, 148, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 207, 148, 0.5);
+}
+
+.btn-outline-rueckkuehlung.disabled, .btn-outline-rueckkuehlung:disabled {
+  color: #00cf94;
+  background-color: transparent;
+}
+
+.btn-outline-rueckkuehlung:not(:disabled):not(.disabled):active, .btn-outline-rueckkuehlung:not(:disabled):not(.disabled).active,
+.show > .btn-outline-rueckkuehlung.dropdown-toggle {
+  color: #fff;
+  background-color: #00cf94;
+  border-color: #00cf94;
+}
+
+.btn-outline-rueckkuehlung:not(:disabled):not(.disabled):active:focus, .btn-outline-rueckkuehlung:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-rueckkuehlung.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 207, 148, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(0, 207, 148, 0.5);
+}
+
+.btn-outline-umkehrosmoseanlagen {
+  color: #92d050;
+  border-color: #92d050;
+}
+
+.btn-outline-umkehrosmoseanlagen:hover {
+  color: #212529;
+  background-color: #92d050;
+  border-color: #92d050;
+}
+
+.btn-outline-umkehrosmoseanlagen:focus, .btn-outline-umkehrosmoseanlagen.focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(146, 208, 80, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(146, 208, 80, 0.5);
+}
+
+.btn-outline-umkehrosmoseanlagen.disabled, .btn-outline-umkehrosmoseanlagen:disabled {
+  color: #92d050;
+  background-color: transparent;
+}
+
+.btn-outline-umkehrosmoseanlagen:not(:disabled):not(.disabled):active, .btn-outline-umkehrosmoseanlagen:not(:disabled):not(.disabled).active,
+.show > .btn-outline-umkehrosmoseanlagen.dropdown-toggle {
+  color: #212529;
+  background-color: #92d050;
+  border-color: #92d050;
+}
+
+.btn-outline-umkehrosmoseanlagen:not(:disabled):not(.disabled):active:focus, .btn-outline-umkehrosmoseanlagen:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-umkehrosmoseanlagen.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(146, 208, 80, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(146, 208, 80, 0.5);
+}
+
 .btn-link {
   font-weight: 400;
   color: #007ab9;
@@ -3097,6 +3541,66 @@ button.bg-dark:focus {
   background-color: #4b4c4d !important;
 }
 
+.bg-lightblue {
+  background-color: #DAE9F6 !important;
+}
+
+a.bg-lightblue:hover, a.bg-lightblue:focus,
+button.bg-lightblue:hover,
+button.bg-lightblue:focus {
+  background-color: #b1d1ec !important;
+}
+
+.bg-multifunktionssystem {
+  background-color: #FFCC00 !important;
+}
+
+a.bg-multifunktionssystem:hover, a.bg-multifunktionssystem:focus,
+button.bg-multifunktionssystem:hover,
+button.bg-multifunktionssystem:focus {
+  background-color: #cca300 !important;
+}
+
+.bg-luftbefeuchtung {
+  background-color: #00b0f0 !important;
+}
+
+a.bg-luftbefeuchtung:hover, a.bg-luftbefeuchtung:focus,
+button.bg-luftbefeuchtung:hover,
+button.bg-luftbefeuchtung:focus {
+  background-color: #008bbd !important;
+}
+
+.bg-waermerueckgewinnung {
+  background-color: #ea3833 !important;
+}
+
+a.bg-waermerueckgewinnung:hover, a.bg-waermerueckgewinnung:focus,
+button.bg-waermerueckgewinnung:hover,
+button.bg-waermerueckgewinnung:focus {
+  background-color: #d41b16 !important;
+}
+
+.bg-rueckkuehlung {
+  background-color: #00cf94 !important;
+}
+
+a.bg-rueckkuehlung:hover, a.bg-rueckkuehlung:focus,
+button.bg-rueckkuehlung:hover,
+button.bg-rueckkuehlung:focus {
+  background-color: #009c70 !important;
+}
+
+.bg-umkehrosmoseanlagen {
+  background-color: #92d050 !important;
+}
+
+a.bg-umkehrosmoseanlagen:hover, a.bg-umkehrosmoseanlagen:focus,
+button.bg-umkehrosmoseanlagen:hover,
+button.bg-umkehrosmoseanlagen:focus {
+  background-color: #79bb32 !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -3175,6 +3679,30 @@ button.bg-dark:focus {
 
 .border-dark {
   border-color: #646567 !important;
+}
+
+.border-lightblue {
+  border-color: #DAE9F6 !important;
+}
+
+.border-multifunktionssystem {
+  border-color: #FFCC00 !important;
+}
+
+.border-luftbefeuchtung {
+  border-color: #00b0f0 !important;
+}
+
+.border-waermerueckgewinnung {
+  border-color: #ea3833 !important;
+}
+
+.border-rueckkuehlung {
+  border-color: #00cf94 !important;
+}
+
+.border-umkehrosmoseanlagen {
+  border-color: #92d050 !important;
 }
 
 .border-white {
@@ -6573,6 +7101,54 @@ a.text-light:hover, a.text-light:focus {
 
 a.text-dark:hover, a.text-dark:focus {
   color: #3e3f40 !important;
+}
+
+.text-lightblue {
+  color: #DAE9F6 !important;
+}
+
+a.text-lightblue:hover, a.text-lightblue:focus {
+  color: #9cc4e7 !important;
+}
+
+.text-multifunktionssystem {
+  color: #FFCC00 !important;
+}
+
+a.text-multifunktionssystem:hover, a.text-multifunktionssystem:focus {
+  color: #b38f00 !important;
+}
+
+.text-luftbefeuchtung {
+  color: #00b0f0 !important;
+}
+
+a.text-luftbefeuchtung:hover, a.text-luftbefeuchtung:focus {
+  color: #0078a4 !important;
+}
+
+.text-waermerueckgewinnung {
+  color: #ea3833 !important;
+}
+
+a.text-waermerueckgewinnung:hover, a.text-waermerueckgewinnung:focus {
+  color: #bd1813 !important;
+}
+
+.text-rueckkuehlung {
+  color: #00cf94 !important;
+}
+
+a.text-rueckkuehlung:hover, a.text-rueckkuehlung:focus {
+  color: #00835d !important;
+}
+
+.text-umkehrosmoseanlagen {
+  color: #92d050 !important;
+}
+
+a.text-umkehrosmoseanlagen:hover, a.text-umkehrosmoseanlagen:focus {
+  color: #6ca72d !important;
 }
 
 .text-body {

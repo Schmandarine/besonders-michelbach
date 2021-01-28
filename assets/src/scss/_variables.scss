@@ -1,5 +1,6 @@
 $primary: #007ab9;
 $secondary: #a7c6e2;
+$lightblue: #DAE9F6;
 
 $light-primary: #CCDEEF;
 $gray-100: #f8f9fa !default;
@@ -10,7 +11,20 @@ $gray-800: #343a40 !default;
 $dark: #646567;
 
 $enable-rounded: false;
-
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "lightblue": $lightblue,
+    "multifunktionssystem": #FFCC00,
+    "luftbefeuchtung": #00b0f0,
+    "waermerueckgewinnung": #ea3833,
+    "rueckkuehlung": #00cf94,
+    "umkehrosmoseanlagen": #92d050
+  ),
+  $theme-colors
+);
 
 $link-color: $primary;
 

@@ -12,7 +12,7 @@
  * @package besonders-michelbach
  */
 
-get_header();
+get_header('blank');
 ?>
 	
 	<main id="primary" class="site-main">
