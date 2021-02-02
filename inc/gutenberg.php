@@ -106,6 +106,11 @@ function gutenberg_colors_setup() {
 			'color' => '#a7c6e2',
 		),
 		array(
+			'name'  => __( 'Multifunktion', 'besonders-michelbach' ),
+			'slug'  => 'multifunktionssystem',
+			'color' => '#FFCC00',
+		),
+		array(
 			'name'  => __( 'Lightblue', 'besonders-michelbach' ),
 			'slug'  => 'lightblue',
 			'color' => '#DAE9F6',

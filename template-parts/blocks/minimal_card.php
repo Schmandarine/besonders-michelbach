@@ -28,9 +28,9 @@ $card_link = get_field('link');
 
 <div data-aos="fade-up" data-aos-offset="-50" id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
 
-    <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
+    <a href="<?php echo $card_link; ?>" alt="" title="" class="custom_card d-block box-shadow position-relative mb-md-3">
         <?php echo $img_attach ?>
-        <div class="d-flex flex-row position-relative">
+        <div class="d-flex flex-row position-relative w-100">
             <div class="card-link-chevron"></div>
             <?php 
                 if( $card_link ) : ?>

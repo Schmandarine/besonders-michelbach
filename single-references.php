@@ -7,40 +7,20 @@
  * @package besonders-michelbach
  */
 
-get_header();
+get_header('blank');
 ?>
 
-	<div id="primary" class="site-single container">
-		<div class="row">
-			<main class="col-12">
-			<?php
-			while ( have_posts() ) :
-				the_post(); ?>
 
+	<main id="primary" class="site-main">
+				<?php
+				while ( have_posts() ) :
+					the_post();
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					the_content();
 
-					<div class="entry-content">
-						<?php
-						the_content();
-						?>
-					</div><!-- .entry-content -->
-
-
-				</article>
-
-				<?php the_post_navigation(
-					array(
-						'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Vorheriger Beitrag:', 'besonders-michelbach' ) . '</span> <span class="nav-title">%title</span>',
-						'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Nächster Beiträg:', 'besonders-michelbach' ) . '</span> <span class="nav-title">%title</span>',
-					)
-				);
-
-			endwhile; // End of the loop.
-			?>
-			</main>
-		</div>
-	</div><!-- #main -->
+				endwhile; // End of the loop.
+				?>
+	</main><!-- #main -->
 
 <?php
 get_footer();

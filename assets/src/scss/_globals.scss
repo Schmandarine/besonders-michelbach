@@ -23,7 +23,8 @@ h3,
 .h3 {
     text-transform: uppercase;
     word-break: normal;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.7rem;
+    margin-top: 2.3rem;
 
     @include media-breakpoint-down(xs) {
         word-break: break-word;
@@ -39,6 +40,11 @@ h2 {
     @include media-breakpoint-up(md){
         font-size: 2rem;
     }
+}
+
+h3 {
+    font-weight: bold;
+    color: $secondary;
 }
 
 b, strong {
@@ -90,3 +96,26 @@ ul {
 }
 
 
+.print-funktionen-icons-list-wrapper {
+
+    .funktion-icon-wrapper {
+    border: 1px solid $primary;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 3px;
+    margin: 0 10px 15px 0;
+}
+
+    .funktion-descr {
+        
+        color: $primary;
+    }
+    img {
+        width: 1.6rem;
+        height: 1.6rem;
+        object-fit: contain;
+        padding: 4px;
+    }
+}

@@ -7,7 +7,7 @@
  * @package besonders-michelbach
  */
 
-get_header();
+get_header('blank');
 ?>
 
 	<div id="primary" class="site-single container">

@@ -7,6 +7,30 @@
  * @package besonders-michelbach
  */
 
+function show_functions_images_function() {
+
+	$output = "none";
+
+	$terms_funktionen = get_terms( array(
+		'taxonomy' => 'funktionen',
+		'hide_empty' => false,
+	) );
+		if ( ! empty( $terms_funktionen ) ) {
+			$output = '<div class="print-funktionen-icons-list-wrapper">';
+			foreach ($terms_funktionen as $term) {
+				$output .= '<div class="funktion-icon-wrapper">';
+					$output .= '<div class="funktion-descr">'.$term->name.'</div>';
+					$output .= '<img src="'.get_template_directory_uri(  ).'/assets/dist/img/'.$term->slug.'.svg" class="funktion-icon-item">';
+				$output .= '</div>';
+			}
+			$output .= '</div>';
+		}
+
+		return $output;
+}
+add_shortcode('show_functions_images', 'show_functions_images_function');
+
+
 if ( ! function_exists( 'besonders_brombach_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.

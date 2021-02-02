@@ -19,7 +19,7 @@ $content = get_field('content'); // Auswahl zw custom_post_types oder eigenen Ka
 $eigene_wiederholung = get_field('eigene_wiederholung');
 
 $show_all_cpt = get_field('show_all_cpt');
-$choose_cpt = get_field('choose_cpt') ?: 'post'; 
+$choose_cpt = get_field('choose_cpt') ?: 'references'; 
 $cpt_wiederholung = get_field('cpt_wiederholung');
 
 if( $content == 'post_types' ) {
@@ -37,7 +37,7 @@ if( !empty($block['anchor']) ) {
 }
 
 // Grid oder Slider Klasse
-$className = 'cardsview-wrapper mb-5 cards-'.$layout.' cards-'.$choose_cpt;
+$className = 'cardsview-wrapper cards-'.$layout.' cards-'.$choose_cpt;
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -116,7 +116,7 @@ if($show_all_cpt) {
             <!-- VIEW -->
             <div class="h-100 p-2">
 
-                <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow bg-white position-relative mb-3">
+                <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow position-relative mb-3">
                     <?php echo $img_attach;
                     if($card_text): ?>
                         <div class="d-flex flex-row">

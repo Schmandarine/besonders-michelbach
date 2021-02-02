@@ -17,7 +17,7 @@ get_header('blank');
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h1 class="page-title text-secondary">
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Suchergebnisse für: %s', 'besonders-michelbach' ), '<span>' . get_search_query() . '</span>' );

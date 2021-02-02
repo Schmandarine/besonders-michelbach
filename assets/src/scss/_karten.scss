@@ -1,7 +1,18 @@
 // cards
 .cards-references {
+    @include media-breakpoint-down(sm){
+        a {
+            background-color: white!important;
+            color: $dark!important;
+            flex-direction: row-reverse;
+        }
+    }
+
     img {
         position: relative;
+        @include media-breakpoint-down(sm){
+            display:block!important;
+        }
         &:after {
             content: '';
             display: table;
@@ -62,7 +73,13 @@
 
 }
 .hero-cards {
-    
+    @include media-breakpoint-down(sm){
+        a {
+            background-color: white!important;
+            color: $dark!important;
+            margin-bottom: 0!important;
+        }
+    }
     margin-top: -95px;
     position: relative;
     z-index: 5;
@@ -74,10 +91,13 @@
     img {
         height: 22vw;
         max-height: 250px;
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
     }
 
     @include media-breakpoint-up(md) {
-        margin-top: -185px;
+        margin-top: -135px;
         margin-bottom: 4em;
     }
 }
@@ -102,10 +122,25 @@
         object-fit: cover;
         transition: all 250ms;
         filter: saturate(.8);
+        @include media-breakpoint-down(sm){
+            display: block;
+            flex-basis: 10%;
+            width: 28%;
+            margin: 0;
+            object-fit: cover;
+        }
     }
     a {
     color: $dark;
     text-transform: uppercase;
+    background-color: white;
+    @include media-breakpoint-down(sm){
+        display: flex!important;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: stretch;
+        margin-bottom: 8px;
+    }
     &:hover,
     &:active {
          text-decoration: none;

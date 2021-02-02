@@ -11,8 +11,12 @@
  *
  * @package besonders-michelbach
  */
+if(is_page( [303, 355] )){
+	get_header('blank');
+}else {
+	get_header();
+}
 
-get_header('blank');
 ?>
 	
 	<main id="primary" class="site-main">

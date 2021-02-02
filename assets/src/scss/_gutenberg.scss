@@ -20,17 +20,19 @@
         width: 100%;
     }	
 
-    @include media-breakpoint-down(sm) {
-    #primary .wp-block-column:nth-child(2n) {
-        //margin-left: 0;
-    }
-}
 
-    @include media-breakpoint-down(sm) {
 
+
+    @include media-breakpoint-down(md) {
+
+        #primary .wp-block-columns {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
         #primary .wp-block-column {
             flex-basis: 100%!important; 
             margin-left: 0;
+            
         } 
 
         }
@@ -99,6 +101,12 @@
 .wp-block-group {
     margin-bottom: 4rem;
 }
+
+
+.block-editor-block-list__layout .wp-block-group .wp-block {
+    width:100% !important;
+} 
+
 
 .site-main {
 
