@@ -2,7 +2,7 @@ var ImageminPlugin = require('imagemin-webpack-plugin').default
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const imageminSvgo = require('imagemin-svgo');
-const imageminOptipng = require('imagemin-optipng');
+const imageminPngQuant = require('imagemin-pngquant');
 
 const path = require('path');
 
@@ -36,9 +36,8 @@ module.exports = {
         }),
         new ImageminPlugin({
             test: /\.(jpe?g|png|gif|svg)$/i,
-            pngquant: ({ quality: [0.1, 0.1] }),
             plugins: [
-                imageminOptipng(),
+                imageminPngQuant({ quality: [0.8, 0.9] }),
                 imageminMozjpeg({
                     quality: 60,
                     progressive: true

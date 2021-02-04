@@ -273,7 +273,8 @@
                     },
                     "post_type": [
                         "references",
-                        "post"
+                        "post",
+                        "page"
                     ],
                     "taxonomy": "",
                     "allow_null": 0,
@@ -301,5 +302,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1611577883
+    "modified": 1612443441
 }
