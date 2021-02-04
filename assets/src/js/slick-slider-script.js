@@ -28,7 +28,7 @@ export const slickSliderScript = () => {
                 responsive: [{
                     breakpoint: 992,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                     },
                 },
                 {

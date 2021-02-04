@@ -90,7 +90,7 @@ if($show_all_cpt) {
             $cpt_id_array[] = get_sub_field('inhaltselement');    
         endwhile;
         $args = array(
-            'post_type' => array('references', 'post'),
+            'post_type' => array('references', 'post', 'page'),
             'post__in' => $cpt_id_array
          );
          $query = new WP_Query( $args );

@@ -43,10 +43,10 @@
 		</div>
 		<div class="bg-primary mb-1">
 			<ul class="site-footer-navi p-0 m-0">
-				<li><a href="#">Impressum</a></li>
-				<li><a href="#">Datenschutz</a></li>
-				<li><a href="#">AGBs</a></li>
-				<li><a href="#">Kontakt</a></li>
+				<li><a href="/impressum/">Impressum</a></li>
+				<li><a href="/datenschutzerklaerung/">Datenschutz</a></li>
+				<li><a href="/agbs">AGBs</a></li>
+				<li><a href="/kontakt/">Kontakt</a></li>
 			</ul>
 		</div>
 		<div class="bg-dark text-center text-light p-2">2020 Michelbach Unternehmensgruppe</div>

@@ -7710,6 +7710,13 @@ hr {
   margin-bottom: 4rem;
 }
 
+@media (max-width: 991.98px) {
+  .wp-block-cover,
+  .wp-block-group {
+    margin-bottom: 1rem !important;
+  }
+}
+
 .block-editor-block-list__layout .wp-block-group .wp-block {
   width: 100% !important;
 }
