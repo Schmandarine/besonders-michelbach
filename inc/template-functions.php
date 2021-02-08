@@ -114,3 +114,22 @@ function wpdocs_custom_taxonomies_terms_links() {
     }
     return implode( '', $out );
 }
+
+
+function filter_references_archive_query( $query ) {
+
+if(! is_admin() ){
+
+    if ( ! $query->is_main_query() ) {
+        return $query;
+    } else {
+        if ( is_post_type_archive( 'references' ) ) {
+            $query->set( 'post_status', 'publish' );
+        }
+        return $query;
+    }
+
+}
+
+}
+add_filter( 'pre_get_posts', 'filter_references_archive_query' );

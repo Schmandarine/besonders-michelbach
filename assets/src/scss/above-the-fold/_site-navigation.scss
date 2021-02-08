@@ -4,6 +4,16 @@
   top: 0;
   z-index: 10;
 
+  @include media-breakpoint-down(md){
+    .search-navi-wrapper {
+      transform: scale(0.7) translateY(0);
+      transform-origin: right center;
+    }
+    .site-branding img {
+      max-width: 200px;
+    }
+  }
+
   &.scroll-smaller {
     .search-navi-wrapper {
         transform: scale(0.7) translateY(0);
@@ -26,6 +36,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
 }
 
 .site-navigation-container,
@@ -112,6 +124,7 @@
       display: block;
       font-size: 2rem;
       text-transform: uppercase;
+      padding: 8px 15px;
   
       &:hover {
         font-weight: bold!important;
@@ -147,8 +160,9 @@
       }
 
       a {
+        font-size: 1.4rem;
+        padding-left: 32px;
         font-weight: 300;
-        font-size: 1.7rem;
       }
 
     }

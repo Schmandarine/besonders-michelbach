@@ -19,7 +19,7 @@
 
 	<footer class="site-footer mt-5 bg-white">
 		
-		<div class="container-fluid mb-1 p-0">
+		<div class="container-fluid mb-1 p-lg-0">
 			<div class="row">
 				<div class="col-md-6 col-12">
 					<div class="w-100 h-100" id="footer-map">

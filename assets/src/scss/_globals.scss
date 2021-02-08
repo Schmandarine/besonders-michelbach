@@ -21,18 +21,20 @@ h3,
 .h3 {
     text-transform: uppercase;
     word-break: normal;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
     margin-top: 2.3rem;
+    line-height: 1.5;
 
     @include media-breakpoint-down(xs) {
         word-break: break-word;
+        
     }
 }
 
 h2 {
     font-weight: bold;
     letter-spacing: .2px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: $primary;
 
     @include media-breakpoint-up(md){
@@ -51,10 +53,8 @@ b, strong {
 
 p {
     font-size: 1.2rem;
-    line-height: 1.7;
-    @media (max-width: 370px) {
-        word-break: break-word;
-    }
+    line-height: 1.5;
+    word-break: break-word;
 }
 
 .box-shadow {

@@ -8,11 +8,15 @@
  */
 
 get_header('blank');
+
+
 ?>
 
 	<div id="primary" class="site-search container">
 		<div class="row">
 			<main class="col-12">
+				<h1 class="text-primary mb-4">Referenzanlagen im Überblick:</h1>
+				<div class="row cards-references">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -22,8 +26,8 @@ get_header('blank');
 			while ( have_posts() ) :
 				the_post();
 
-				echo '<div class="">';
-				get_template_part( 'template-parts/content', get_post_type() );
+				echo '<div class="col-md-6 col-lg-4 col-12">';
+				get_template_part( 'template-parts/view', 'cards' );
 				echo '</div>';
 
 			endwhile;
@@ -36,6 +40,7 @@ get_header('blank');
 
 		endif;
 		?>
+		</div>
 			</main>
 		</div>
 	</div><!-- #main -->

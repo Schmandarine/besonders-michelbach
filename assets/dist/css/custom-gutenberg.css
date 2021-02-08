@@ -7407,8 +7407,9 @@ h3,
 .h3 {
   text-transform: uppercase;
   word-break: normal;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   margin-top: 2.3rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 575.98px) {
@@ -7425,7 +7426,7 @@ h3,
 h2 {
   font-weight: bold;
   letter-spacing: .2px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #007ab9;
 }
 
@@ -7447,13 +7448,8 @@ strong {
 
 p {
   font-size: 1.2rem;
-  line-height: 1.7;
-}
-
-@media (max-width: 370px) {
-  p {
-    word-break: break-word;
-  }
+  line-height: 1.5;
+  word-break: break-word;
 }
 
 .box-shadow {
@@ -7705,6 +7701,10 @@ hr {
   color: white;
 }
 
+.wp-block-cover .wp-block-group {
+  margin-bottom: 0 !important;
+}
+
 .wp-block-cover,
 .wp-block-group {
   margin-bottom: 4rem;
@@ -7713,7 +7713,7 @@ hr {
 @media (max-width: 991.98px) {
   .wp-block-cover,
   .wp-block-group {
-    margin-bottom: 1rem !important;
+    margin-bottom: 1rem;
   }
 }
 

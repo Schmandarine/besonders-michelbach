@@ -95,13 +95,16 @@
 
 .wp-block-cover {
     color: white;
+    .wp-block-group {
+        margin-bottom: 0!important;
+    }
 }
  
 .wp-block-cover, 
 .wp-block-group {
     margin-bottom: 4rem;
     @include media-breakpoint-down(md){
-        margin-bottom: 1rem!important;
+        margin-bottom: 1rem;
     }
 }
 

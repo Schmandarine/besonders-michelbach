@@ -11,12 +11,8 @@
  *
  * @package besonders-michelbach
  */
-if(is_page( [303, 355, 346, 349, 351, 353, 359, 357, 361, 334, 363, 307, 179, 1875] )){
-	get_header('blank');
-}else {
-	get_header();
-}
 
+ get_header('blank');
 ?>
 	
 	<main id="primary" class="site-main">

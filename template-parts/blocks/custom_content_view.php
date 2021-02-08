@@ -44,7 +44,7 @@ if( !empty($block['className']) ) {
 // Wenn Grid berechne die Spaltenbreite
 if( $columns ) {
     $cols = 12 / $columns;
-    $colWidth = " col-lg-$cols col-12 col-md-6";
+    $colWidth = " col-lg-$cols col-12";
     /*
     switch ($count_slides) {
         case 1:
@@ -75,7 +75,8 @@ if($show_all_cpt) {
 
     $args = array(
         'post_type' => $choose_cpt, 
-        'posts_per_page' => -1 
+        'posts_per_page' => -1 ,
+        'post_status' => 'publish'
     );
     $query = new WP_Query( $args );
 
@@ -91,7 +92,8 @@ if($show_all_cpt) {
         endwhile;
         $args = array(
             'post_type' => array('references', 'post', 'page'),
-            'post__in' => $cpt_id_array
+            'post__in' => $cpt_id_array,
+            'post_status' => 'publish'
          );
          $query = new WP_Query( $args );
 
@@ -116,14 +118,24 @@ if($show_all_cpt) {
             <!-- VIEW -->
             <div class="h-100 p-2">
 
-                <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow position-relative mb-3">
-                    <?php echo $img_attach;
-                    if($card_text): ?>
-                        <div class="d-flex flex-row">
-                            <span class="content d-block p-3 lead"><?php echo $card_text ?></span>
-                        </div>
-                    <?php endif; ?>
-                </a>
+                <?php if ( $card_link ) : ?>
+                    <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow position-relative mb-3">
+                <?php else : ?>
+                    <div class="custom_card d-block box-shadow position-relative mb-3">
+                <?php endif; ?>
+
+                        <?php echo $img_attach;
+                        if($card_text): ?>
+                            <div class="d-flex flex-row">
+                                <span class="content d-block p-3 lead"><?php echo $card_text ?></span>
+                            </div>
+                        <?php endif; ?>
+
+                <?php if ( $card_link ) : ?>
+                    </a>
+                <?php else : ?>
+                    </div>
+                <?php endif; ?>
 
             </div>
 
