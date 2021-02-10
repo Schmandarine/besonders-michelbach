@@ -9,7 +9,7 @@ $slick-loader-path: "../";
 }
 .slick-dots {
     li::before {
-    display: none;
+    //display: none;
 }
  li button {
     content: "";
@@ -22,7 +22,7 @@ $slick-loader-path: "../";
 }
 
 .slick-dots li button::before {
-    display: none;
+   // display: none;
 }
 
 .slick-dots li.slick-active button {

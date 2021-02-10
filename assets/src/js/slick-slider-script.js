@@ -18,13 +18,17 @@ export const slickSliderScript = () => {
          */
         var initializeBlock = function ($block) {
             console.log("slick karten slider init");
+
+            var leftSlider = $block.find('#custom-slider-arrows .prev-slick');
+            var rightSlider = $block.find('#custom-slider-arrows .next-slick');
+
             $block.find('.row').slick({
                 touchThreshold: 10,
                 infinite: true,
                 dots: true,
-                prevArrow: $('.prev-slick'),
-                nextArrow: $('.next-slick'),
                 arrows: true,
+                prevArrow: leftSlider,
+                nextArrow: rightSlider,
                 responsive: [{
                     breakpoint: 992,
                     settings: {
