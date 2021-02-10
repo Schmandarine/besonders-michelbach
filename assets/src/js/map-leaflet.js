@@ -10,7 +10,7 @@ export const mapLeafletComponent = () => {
         ).addTo(mymap);
 
         var popupLocation1 = new L.LatLng(49.426, 10.916);
-        var popupContent1 = '<div style="width:120px"><img src="' + stylesheet_directory_uri + '/img/michelbach-logo-footer.png" class="my-2" alt=""></div>',
+        var popupContent1 = '<div style="width:120px"><img src="' + stylesheet_directory_uri + '/assets/dist/img/michelbach-logo-footer.png" class="my-2" alt=""></div>',
             popup1 = new L.Popup({
                 closeOnClick: false,
                 autoClose: false,

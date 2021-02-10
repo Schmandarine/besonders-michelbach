@@ -141,7 +141,7 @@ function design_system_gutenberg_styles() {
 	add_theme_support( 'align-wide' );
   
 	// Enqueue editor styles.
-	add_editor_style( get_template_directory_uri(  ) . '/assets/dist/css/custom-gutenberg.css' );
+	add_editor_style( '/assets/dist/css/backend-gutenberg-editor.css' );
 	
 }
 add_action( 'after_setup_theme', 'design_system_gutenberg_styles' );

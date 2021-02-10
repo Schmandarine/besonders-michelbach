@@ -7,7 +7,7 @@ const imageminPngQuant = require('imagemin-pngquant');
 const path = require('path');
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     context: path.resolve(__dirname, "assets"),
     output: {
         filename: 'main.bundle.js',

@@ -1,7 +1,5 @@
-@import "./fonts";
+//@import "./fonts";
 @import "./variables";
-
-
 
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -14,11 +12,6 @@
 @import "./karten";
 @import "./site-footer";
 @import "./site-meta-contact";
-
-
-@import "./above-the-fold/site-navigation";
-@import "./above-the-fold/hamburger-icon";
-@import "./above-the-fold/hero-content";
 
 @import "./slick-custom";
 

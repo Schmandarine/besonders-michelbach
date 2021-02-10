@@ -88,3 +88,10 @@ $slick-loader-path: "../";
 #custom-slider-arrows .slick-slide > div {
     width:100%;
 }
+
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("img/ajax-loader.gif") center center no-repeat;
+    }
+}
