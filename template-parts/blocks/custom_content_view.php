@@ -161,21 +161,7 @@ if($show_all_cpt) {
 
         </div>
 
-        <!-- Slick Slider Pfeile -->
-        <div class="row" id="custom-slider-arrows">
-            <div class="col-12 d-flex align-items-center justify-content-between">
-                <div class="prev-slick slick-arrow-custom">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 39">
-                        <path fill="none" stroke="#58595b" stroke-width="2.307" stroke-linecap="round" stroke-linejoin="round" d="M21.3 13.1L9.7 19.8l11.6 6.7"/>
-                    </svg>
-                </div>
-                <div class="next-slick slick-arrow-custom">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 39">
-                        <path fill="none" stroke="#58595b" stroke-width="2.307" stroke-linecap="round" stroke-linejoin="round" d="M21.3 13.1L9.7 19.8l11.6 6.7"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
+
 
     </div><!--container -->
 

@@ -3,13 +3,30 @@ $slick-loader-path: "../";
 @import "../../../node_modules/slick-carousel/slick/slick";
 @import "../../../node_modules/slick-carousel/slick/slick-theme";
 
+.slick-prev, .slick-next {    
+    bottom: -80px;
+    top: unset; 
+    width:unset;
+    height:unset;
+}
+
+.slick-prev {
+    left: 0!important;
+}
+
+.slick-next {
+    right: 0!important;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 50px;
+}
 
 .slick-arrow.slick-hidden {
     display: block;
 }
 .slick-dots {
     li::before {
-    //display: none;
 }
  li button {
     content: "";
@@ -19,10 +36,6 @@ $slick-loader-path: "../";
     background-color: $secondary;
     opacity: 1;
 }
-}
-
-.slick-dots li button::before {
-   // display: none;
 }
 
 .slick-dots li.slick-active button {
@@ -63,15 +76,6 @@ $slick-loader-path: "../";
 
 }
 
-.slick-dotted.slick-slider {
-    //margin-bottom: 80px;
-
-    @include media-breakpoint-up(md) {
-        //margin-bottom: 120px;
-    }
-
-}
-
 
 
 .cards-slider .slick-track {
@@ -94,4 +98,9 @@ $slick-loader-path: "../";
     .slick-loading & {
         background: #fff slick-image-url("img/ajax-loader.gif") center center no-repeat;
     }
+}
+
+
+.slick-dotted.slick-slider {
+    margin-bottom: 100px;
 }
