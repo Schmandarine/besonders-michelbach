@@ -26,7 +26,7 @@ get_header('blank');
 			while ( have_posts() ) :
 				the_post();
 
-				echo '<div class="col-md-6 col-lg-4 col-12">';
+				echo '<div class="col-md-6 col-lg-4 col-12 mb-3">';
 				get_template_part( 'template-parts/view', 'cards' );
 				echo '</div>';
 

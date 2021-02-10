@@ -7,7 +7,7 @@ if( !empty($block['anchor']) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'minimal_card h-100';
+$className = 'minimal_card h-100 box-shadow mb-md-3 d-flex';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -28,9 +28,9 @@ $card_link = get_field('link');
 
 <div data-aos="fade-up" data-aos-offset="-50" id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
 
-    <a href="<?php echo $card_link; ?>" alt="" title="" class="custom_card d-block box-shadow position-relative mb-md-3">
+    <a href="<?php echo $card_link; ?>" alt="" title="" class=" position-relative w-100">
         <?php echo $img_attach ?>
-        <div class="d-flex flex-row position-relative w-100">
+        <div class="d-flex flex-row position-relative w-100 h-100 align-items-center">
             <div class="card-link-chevron"></div>
             <?php 
                 if( $card_link ) : ?>

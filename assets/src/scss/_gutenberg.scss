@@ -91,7 +91,51 @@
         }
     }
 
+/* 
+** Gutenberg Datei File 
+*/
 
+#primary .wp-block-file {
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid $primary;
+    display: flex;
+    flex-flow: row;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    a {
+        flex-grow: 0;
+        padding:10px 15px;
+        word-break: break-all;
+    }
+    .wp-block-file__button {
+        background: $primary;
+    border-radius: unset;
+    display: flex;
+    align-items: center;
+    color: white;
+    }
+}
+
+
+/* 
+** Gutenberg Center in Cover, Group, Colls 
+*/
+#primary {
+    .wp-block-columns.vertical-center,
+    .wp-block-group.vertical-center {
+        div {
+            margin-bottom: 0;
+        }
+        h1,h2,h3,h4 {
+            margin-top: 0!important;
+        }
+    }
+}
+
+/* 
+** Gutenberg Cover 
+*/
 
 .wp-block-cover {
     color: white;

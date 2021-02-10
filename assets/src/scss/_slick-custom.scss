@@ -53,11 +53,11 @@ $slick-loader-path: "../";
         cursor: pointer;
 
         &:hover path {
-            fill: $primary;
+            stroke: $primary;
         }
 
         path {
-            fill: $secondary;
+            stroke: $secondary;
         }
     }
 
@@ -70,4 +70,21 @@ $slick-loader-path: "../";
         //margin-bottom: 120px;
     }
 
+}
+
+
+
+.cards-slider .slick-track {
+    display: flex;
+
+    .slick-slide {
+        display: flex;
+        height:auto;
+        justify-content: center;
+        }
+
+}
+
+#custom-slider-arrows .slick-slide > div {
+    width:100%;
 }

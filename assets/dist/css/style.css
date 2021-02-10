@@ -273,6 +273,7 @@ ul li {
 }
 
 .cards-references .funktionen-icons-wrapper {
+  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,11 +337,6 @@ ul li {
   .hero-cards {
     margin-top: -75px;
   }
-  .hero-cards a {
-    background-color: white !important;
-    color: #646567 !important;
-    margin-bottom: 0 !important;
-  }
 }
 
 .hero-cards .content {
@@ -353,21 +349,14 @@ ul li {
   display: flex !important;
 }
 
-.hero-cards img {
-  height: 22vw;
-  max-height: 250px;
-}
-
-@media (max-width: 991.98px) {
-  .hero-cards img {
-    display: none;
-  }
-}
-
-@media (min-width: 782px) {
+@media (min-width: 992px) {
   .hero-cards {
     margin-top: -135px;
     margin-bottom: 4em;
+  }
+  .hero-cards img {
+    height: 19vw;
+    max-height: 250px;
   }
 }
 
@@ -377,11 +366,18 @@ ul li {
   height: 250px;
 }
 
+.minimal_card {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
 .minimal_card .content {
-  min-height: 102px;
-  font-size: 1em;
-  letter-spacing: -0.2px;
-  line-height: 1.4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,45 +395,38 @@ ul li {
      object-fit: cover;
   -webkit-transition: all 250ms;
   transition: all 250ms;
+  margin: 0;
   -webkit-filter: saturate(0.8);
           filter: saturate(0.8);
+  width: 100%;
 }
 
 @media (max-width: 991.98px) {
   .minimal_card img {
-    display: block;
-    -ms-flex-preferred-size: 29%;
-        flex-basis: 29%;
-    width: 28%;
-    margin: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-    max-height: 100px;
+    width: 20%;
   }
 }
 
 .minimal_card a {
   color: #646567;
   text-transform: uppercase;
-  background-color: white;
   font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 100%;
 }
 
 @media (max-width: 991.98px) {
   .minimal_card a {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    margin-bottom: 8px;
-    font-size: .8rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
   }
 }
 
@@ -593,6 +582,16 @@ ul li {
   width: 20px;
   height: 20px;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2LjgiIGhlaWdodD0iMTEuNiIgdmlld0JveD0iMCAwIDYuOCAxMS42Ij48cGF0aCBkPSJNOS4xNjMsNC41MTZjLjQxOC40MDgsNC41LDQuNyw0LjUsNC43YTEuMDk0LDEuMDk0LDAsMCwxLDAsMS41NzZzLTQuMDg0LDQuMjg5LTQuNSw0LjdhMS4xODgsMS4xODgsMCwwLDEtMS42MTUsMCwxLjA2MywxLjA2MywwLDAsMSwwLTEuNTc0TDExLjMsMTAsNy41NDgsNi4wOTJhMS4wNjYsMS4wNjYsMCwwLDEsMC0xLjU3NkExLjE4NywxLjE4NywwLDAsMSw5LjE2Myw0LjUxNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03LjIgLTQuMTk5KSIgZmlsbD0iI2RhZGFkYSIvPjwvc3ZnPg==);
+}
+
+.custom_card {
+  background-color: white;
+}
+
+.custom_card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
 }
 
 .site-footer {
@@ -1481,11 +1480,31 @@ ul li {
 }
 
 .slick-arrow-custom svg:hover path {
-  fill: #007ab9;
+  stroke: #007ab9;
 }
 
 .slick-arrow-custom svg path {
-  fill: #a7c6e2;
+  stroke: #a7c6e2;
+}
+
+.cards-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards-slider .slick-track .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#custom-slider-arrows .slick-slide > div {
+  width: 100%;
 }
 
 .cards-grid #custom-slider-arrows {
@@ -1727,6 +1746,65 @@ hr {
   background-color: #92d050 !important;
 }
 
+/* 
+** Gutenberg Datei File 
+*/
+#primary .wp-block-file {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border: 1px solid #007ab9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+#primary .wp-block-file a {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 10px 15px;
+  word-break: break-all;
+}
+
+#primary .wp-block-file .wp-block-file__button {
+  background: #007ab9;
+  border-radius: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+/* 
+** Gutenberg Center in Cover, Group, Colls 
+*/
+#primary .wp-block-columns.vertical-center div,
+#primary .wp-block-group.vertical-center div {
+  margin-bottom: 0;
+}
+
+#primary .wp-block-columns.vertical-center h1, #primary .wp-block-columns.vertical-center h2, #primary .wp-block-columns.vertical-center h3, #primary .wp-block-columns.vertical-center h4,
+#primary .wp-block-group.vertical-center h1,
+#primary .wp-block-group.vertical-center h2,
+#primary .wp-block-group.vertical-center h3,
+#primary .wp-block-group.vertical-center h4 {
+  margin-top: 0 !important;
+}
+
+/* 
+** Gutenberg Cover 
+*/
 .wp-block-cover {
   color: white;
 }

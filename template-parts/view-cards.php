@@ -16,9 +16,9 @@ $terms_anwendungsbereiche = get_the_terms( get_the_ID(), 'anwendungsbereiche' );
 $terms_funktionen = get_the_terms( get_the_ID(), 'funktionen' );
 ?>
 
-<div class="minimal_card">
+<div class="minimal_card box-shadow h-100">
 
-    <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow position-relative mb-3">
+    <a href="<?php echo $card_link; ?>" class="custom_card d-flex flex-column position-relative h-100">
         <?php echo $img_attach ?>
 
             
@@ -35,7 +35,7 @@ $terms_funktionen = get_the_terms( get_the_ID(), 'funktionen' );
                 ?>
             
 
-        <div class="content p-3 position-relative">
+        <div class="content p-3 position-relative h-100">
             <div class="card-link-chevron"></div>
             <span><?php echo $card_title; ?></span>
             <?php 

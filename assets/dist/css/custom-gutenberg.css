@@ -7697,6 +7697,65 @@ hr {
   background-color: #92d050 !important;
 }
 
+/* 
+** Gutenberg Datei File 
+*/
+#primary .wp-block-file {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border: 1px solid #007ab9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+#primary .wp-block-file a {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 10px 15px;
+  word-break: break-all;
+}
+
+#primary .wp-block-file .wp-block-file__button {
+  background: #007ab9;
+  border-radius: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+/* 
+** Gutenberg Center in Cover, Group, Colls 
+*/
+#primary .wp-block-columns.vertical-center div,
+#primary .wp-block-group.vertical-center div {
+  margin-bottom: 0;
+}
+
+#primary .wp-block-columns.vertical-center h1, #primary .wp-block-columns.vertical-center h2, #primary .wp-block-columns.vertical-center h3, #primary .wp-block-columns.vertical-center h4,
+#primary .wp-block-group.vertical-center h1,
+#primary .wp-block-group.vertical-center h2,
+#primary .wp-block-group.vertical-center h3,
+#primary .wp-block-group.vertical-center h4 {
+  margin-top: 0 !important;
+}
+
+/* 
+** Gutenberg Cover 
+*/
 .wp-block-cover {
   color: white;
 }

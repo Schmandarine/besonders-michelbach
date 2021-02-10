@@ -35,6 +35,7 @@
         padding: 9px 0;
     }
     .funktionen-icons-wrapper {
+        margin-top: auto;
         display: flex;
         .funktion-icon-item {
             border: 1px solid $secondary;
@@ -65,6 +66,7 @@
     }
 }
 .custom_card {
+
     img {
         object-fit: contain;
         width: 100%;
@@ -77,11 +79,6 @@
 }
 .hero-cards {
     @include media-breakpoint-down(md){
-        a {
-            background-color: white!important;
-            color: $dark!important;
-            margin-bottom: 0!important;
-        }
         margin-top: -75px;
     }
     margin-top: -95px;
@@ -92,15 +89,12 @@
         align-items: center;
         display: flex!important;
     }
-    img {
-        height: 22vw;
-        max-height: 250px;
-        @include media-breakpoint-down(md){
-            display: none;
-        }
-    }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
+        img {
+            height: 19vw;
+            max-height: 250px;
+        }
         margin-top: -135px;
         margin-bottom: 4em;
     }
@@ -113,11 +107,10 @@
     }
 }
 .minimal_card {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
     .content {
-        min-height: 102px;
-        font-size: 1em;
-        letter-spacing: -0.2px;
-        line-height: 1.4;
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -125,28 +118,23 @@
     img {
         object-fit: cover;
         transition: all 250ms;
+        margin: 0;
         filter: saturate(.8);
+        //max-height: 300px;
+        width:100%;
         @include media-breakpoint-down(md){
-            display: block;
-            flex-basis: 29%;
-            width: 28%;
-            margin: 0;
-            object-fit: cover;
-            max-height: 100px;
+            width: 20%;
         }
     }
     a {
     color: $dark;
     text-transform: uppercase;
-    background-color: white;
     font-size: 1em;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
     @include media-breakpoint-down(md){
-        display: flex!important;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        justify-content: stretch;
-        margin-bottom: 8px;
-        font-size: .8rem;
+        flex-flow: row;
     }
     &:hover,
     &:active {
@@ -286,4 +274,14 @@
     width: 20px;
     height: 20px;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2LjgiIGhlaWdodD0iMTEuNiIgdmlld0JveD0iMCAwIDYuOCAxMS42Ij48cGF0aCBkPSJNOS4xNjMsNC41MTZjLjQxOC40MDgsNC41LDQuNyw0LjUsNC43YTEuMDk0LDEuMDk0LDAsMCwxLDAsMS41NzZzLTQuMDg0LDQuMjg5LTQuNSw0LjdhMS4xODgsMS4xODgsMCwwLDEtMS42MTUsMCwxLjA2MywxLjA2MywwLDAsMSwwLTEuNTc0TDExLjMsMTAsNy41NDgsNi4wOTJhMS4wNjYsMS4wNjYsMCwwLDEsMC0xLjU3NkExLjE4NywxLjE4NywwLDAsMSw5LjE2Myw0LjUxNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03LjIgLTQuMTk5KSIgZmlsbD0iI2RhZGFkYSIvPjwvc3ZnPg==);
+}
+
+
+
+.custom_card {
+    background-color: white;
+    img {
+        object-fit: contain;
+        width: 100%;
+    }
 }

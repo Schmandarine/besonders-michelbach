@@ -151,7 +151,7 @@ if($show_all_cpt) {
             <?php
                 if($query):
                 while( $query->have_posts() ) : $query->the_post();
-                    echo "<div class=\"{$colWidth} p-2 \">";
+                    echo "<div class=\"{$colWidth} p-2 h-100\">";
                         get_template_part( 'template-parts/view', 'cards' );
                     echo "</div>";
                 endwhile;
@@ -166,14 +166,12 @@ if($show_all_cpt) {
             <div class="col-12 d-flex align-items-center justify-content-between">
                 <div class="prev-slick slick-arrow-custom">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 39">
-                        <path fill="#58595b" d="M17.1 0L0 9.9v19.7l17.1 9.9 17.1-9.9V9.9z"/>
-                        <path fill="none" stroke="#fff" stroke-width="2.307" stroke-linecap="round" stroke-linejoin="round" d="M21.3 13.1L9.7 19.8l11.6 6.7"/>
+                        <path fill="none" stroke="#58595b" stroke-width="2.307" stroke-linecap="round" stroke-linejoin="round" d="M21.3 13.1L9.7 19.8l11.6 6.7"/>
                     </svg>
                 </div>
                 <div class="next-slick slick-arrow-custom">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 39">
-                        <path fill="#58595b" d="M17.1 0L0 9.9v19.7l17.1 9.9 17.1-9.9V9.9z"/>
-                        <path fill="none" stroke="#fff" stroke-width="2.307" stroke-linecap="round" stroke-linejoin="round" d="M21.3 13.1L9.7 19.8l11.6 6.7"/>
+                        <path fill="none" stroke="#58595b" stroke-width="2.307" stroke-linecap="round" stroke-linejoin="round" d="M21.3 13.1L9.7 19.8l11.6 6.7"/>
                     </svg>
                 </div>
             </div>
