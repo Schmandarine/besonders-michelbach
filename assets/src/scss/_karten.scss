@@ -124,6 +124,7 @@
         width:100%;
         @include media-breakpoint-down(md){
             width: 20%;
+            max-height: 80px;
         }
     }
     a {
