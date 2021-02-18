@@ -19,7 +19,7 @@
 
 	<footer class="site-footer mt-5 bg-white">
 		
-		<div class="container-fluid mb-1 p-lg-0">
+		<div class="container-fluid p-lg-0">
 			<div class="row">
 				<div class="col-md-6 col-12">
 					<div class="w-100 h-100" id="footer-map">
@@ -30,7 +30,7 @@
 					<div class="footer-anschrift py-4">
 						<?php the_custom_logo(); ?>
 						<div class="anschrift-content">
-							<p class="text-uppercase font-weight-bold">Michelbach GmbH</p>
+							<p class="text-uppercase font-weight-bold">Michelbach GmbH LUMI- Systems </p>
 							<p>Lupinenstr. 7<br>
 							D-90513 Zirndorf</p>
 							<p>Tel. +49 9127 9006-0<br>
@@ -49,7 +49,7 @@
 				<li><a href="/kontakt/">Kontakt</a></li>
 			</ul>
 		</div>
-		<div class="bg-dark text-center text-light p-2">2020 Michelbach Unternehmensgruppe</div>
+		<div class="bg-dark text-center text-light p-2">2020 © Michelbach GmbH LUMI- Systems</div>
 		
 	</footer>
 
