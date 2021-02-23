@@ -56,10 +56,9 @@ get_header('blank');
 			<aside class="col-md-4">
 				<div class="bg-lightblue p-4 my-4" style="    position: sticky;    top: 120px;">
 					<span class="lead">Nicht dabei was Sie suchen?</span><hr>
-					<img style="float:left" class="mr-3" width="50" height="50" src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/default-avatar.png" alt="">
 					<p>Wir beraten Sie gerne individuell.</p>
 					<div style="clear:both"></div>
-					<a href="#" class="btn btn-primary btn-small">Kontakt</a>
+					<a href="/kontakt" class="btn btn-primary btn-small">Kontakt</a>
 				</div>
 			</aside>
 		</div>

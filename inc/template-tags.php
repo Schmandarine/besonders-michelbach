@@ -20,7 +20,7 @@ function show_functions_images_function() {
 			foreach ($terms_funktionen as $term) {
 				$output .= '<div class="funktion-icon-wrapper">';
 					$output .= '<div class="funktion-descr">'.$term->name.'</div>';
-					$output .= '<img src="'.get_template_directory_uri(  ).'/assets/dist/img/'.$term->slug.'.svg" class="funktion-icon-item">';
+					$output .= '<img src="'.get_template_directory_uri(  ).'/assets/dist/img/'.$term->slug.'.svg" alt="Raumklima'.$term->name.'" class="funktion-icon-item">';
 				$output .= '</div>';
 			}
 			$output .= '</div>';
@@ -216,7 +216,7 @@ endif;
 						</div>
 
 						<div class="search-navi-wrapper ">
-							<a class="searchform-trigger" id="search-trigger"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/lupe-icon.svg"></a>
+							<a class="searchform-trigger" id="search-trigger"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/lupe-icon.svg" title="Passende Klimatechnik finden" alt="Suchfunktion Icon"></a>
 							<div id="search-form-wrapper" class="search-form-wrapper"><?php echo get_search_form(); ?></div>
 
 							<div class="button-wrapper menu-toggle"><!-- Hamburger Menu -->

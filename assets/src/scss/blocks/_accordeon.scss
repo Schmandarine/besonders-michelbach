@@ -9,6 +9,10 @@
     background-color: $light-primary;
     color: $primary;
 
+    .content {
+        text-transform: uppercase;
+    }
+
     &:hover {
         background-color: $primary;
         color: white;

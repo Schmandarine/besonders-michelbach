@@ -57,26 +57,5 @@
 
 <?php wp_footer(); ?>
 
-<style>
-	@media (min-width: 993px){
-		.hero-bg-img {
-			<?php 
-			$thumbnail_url = get_the_post_thumbnail_url() ? get_the_post_thumbnail_url(get_the_ID(),'') : get_template_directory_uri().'/img/default-img.png';
-			echo 'background-image: url('.$thumbnail_url.')';
-			?>
-		}
-	}
-	@media (max-width: 992px){
-		.hero-bg-img {
-			<?php 
-			$thumbnail_url = get_the_post_thumbnail_url() ? get_the_post_thumbnail_url(get_the_ID(),'mobile-hero') : get_template_directory_uri().'/img/default-img.png';
-			echo 'background-image: url('.$thumbnail_url.')';
-			?>			
-		}
-	}
-
-</style>
-
-
 </body>
 </html>

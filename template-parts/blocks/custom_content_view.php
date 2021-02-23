@@ -62,7 +62,7 @@ if( $columns ) {
 
 
 
-<section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <div class="container">
         <div class="row" data-slick='<?php the_field("slider_einstellungen"); ?>'>
 
@@ -167,4 +167,4 @@ if($show_all_cpt) {
 
 
 
-</section>
+</div>

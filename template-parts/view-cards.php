@@ -18,7 +18,7 @@ $terms_funktionen = get_the_terms( get_the_ID(), 'funktionen' );
 
 <div class="minimal_card box-shadow h-100">
 
-    <a href="<?php echo $card_link; ?>" class="custom_card d-flex flex-column position-relative h-100">
+    <a href="<?php echo $card_link; ?>" title="<?php echo $card_title; ?>" class="custom_card d-flex flex-column position-relative h-100">
         <?php echo $img_attach ?>
 
             
@@ -48,7 +48,7 @@ $terms_funktionen = get_the_terms( get_the_ID(), 'funktionen' );
                     if ( ! empty( $terms_funktionen ) ) {
                         echo '<div class="funktionen-icons-wrapper">';
                         foreach ($terms_funktionen as $term) {
-                            echo '<img src="'.get_template_directory_uri(  ).'/assets/dist/img/'.$term->slug.'.svg" class="funktion-icon-item">';
+                            echo '<img src="'.get_template_directory_uri(  ).'/assets/dist/img/'.$term->slug.'.svg" alt="Raumklima '.$term->name.'" class="funktion-icon-item">';
                         }
                         echo '</div>';
                     }
