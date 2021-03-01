@@ -7,7 +7,7 @@
  * @package besonders-michelbach
  */
 
-get_header('blank');
+get_header();
 
 
 ?>
@@ -32,7 +32,7 @@ get_header('blank');
 
 			endwhile;
 
-			the_posts_navigation();
+			//the_posts_navigation();
 
 		else :
 

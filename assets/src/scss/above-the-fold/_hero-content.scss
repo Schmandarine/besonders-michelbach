@@ -16,6 +16,10 @@
     height: 70vh;
     max-height: 670px;
     position: relative;
+    @include media-breakpoint-down(md) {
+        height: auto;
+        max-height: unset;
+    }
     &:after {
         content: '';
         display: table;
@@ -36,24 +40,27 @@
     z-index: 3 !important;
     padding: 95px 15px 165px 15px;
     width: 100%;
-    @include media-breakpoint-up(md) {
-        padding-bottom: 255px;
+    @include media-breakpoint-down(sm) {
+        padding: 65px 15px 125px 15px;
     }
 }
 
 .site h1 {
     color: white;
     font-weight: 800;
-    font-size: 8vw;
+
 
     @media (min-width: 993px) {
         font-size: 3em;
-        //width: 16em;
+
     }
 
-    @media (min-width: 576px) and (max-width: 992px) {
-        font-size: 2.3em;
-        //width: 16em;
+    @media (max-width: 992px) {
+        font-size: 1.7rem;
+
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 1.3rem;
     }
 
     small {

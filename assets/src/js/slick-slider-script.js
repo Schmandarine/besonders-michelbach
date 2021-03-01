@@ -24,13 +24,16 @@ export const slickSliderScript = () => {
 
             $block.find('.row').slick({
                 touchThreshold: 10,
+                slidesToScroll: 3,
                 infinite: true,
                 dots: true,
                 arrows: true,
                 responsive: [{
                     breakpoint: 992,
                     settings: {
-                        slidesToShow: 1
+                        dots: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
                 }
                 ]

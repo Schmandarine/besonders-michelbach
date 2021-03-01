@@ -7,7 +7,7 @@ if( !empty($block['anchor']) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'minimal_card h-100 box-shadow mb-md-3 d-flex';
+$className = 'minimal_card h-100 box-shadow mb-lg-3 d-flex';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }

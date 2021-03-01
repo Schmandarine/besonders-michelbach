@@ -116,7 +116,7 @@ if($show_all_cpt) {
 
 
             <!-- VIEW -->
-            <div class="h-100 p-2">
+            <div class="h-auto p-2">
 
                 <?php if ( $card_link ) : ?>
                     <a href="<?php echo $card_link; ?>" class="custom_card d-block box-shadow position-relative mb-3">

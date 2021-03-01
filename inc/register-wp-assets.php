@@ -23,7 +23,7 @@ function add_cpt_references() {
         'show_in_nav_menus'   => true,
         'show_in_rest'		=> true,
         'show_in_admin_bar'   => true,
-        'has_archive'         => true,
+        'has_archive'         => false,
         'can_export'          => true,
         'exclude_from_search' => false,
         'yarpp_support'       => true,
