@@ -1,4 +1,9 @@
 // cards
+.alle-branchen-slider {
+    img {
+        overflow: unset!important;
+    }
+}
 .cards-references {
 
 
@@ -12,6 +17,9 @@
 
     img {
         position: relative;
+        @include media-breakpoint-up(md) {
+            overflow: hidden;
+        }
         @include media-breakpoint-down(sm){
             display:block!important;
             max-height: unset!important;
@@ -84,6 +92,9 @@
 .hero-cards {
     @include media-breakpoint-down(md){
         margin-top: -75px;
+        img {
+            max-height: 80px!important;
+        }
     }
     margin-top: -95px;
     position: relative;
@@ -139,7 +150,7 @@
         @include media-breakpoint-down(md){
             width: 20%;
             height: auto;
-            max-height: 80px;
+            //max-height: 80px;
         }
     }
     a {
@@ -301,4 +312,10 @@
 
 .cards-grid .row>div{
     height:auto!important;
+}
+
+.produktgruppen-grid img {
+    @include media-breakpoint-down(md) {
+        max-height: 80px!important;
+    }
 }
