@@ -105,7 +105,7 @@
     position: absolute;
     width: 100%;
     background: rgba(0, 122, 185, .97);
-    
+    z-index: 2000;
 
     &.active {
       height: 100vh;

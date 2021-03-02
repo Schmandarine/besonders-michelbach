@@ -319,3 +319,9 @@
         max-height: 80px!important;
     }
 }
+
+@media all and (-ms-high-contrast: none) {
+    .minimal_card img {
+        height: auto;
+    }
+  }
