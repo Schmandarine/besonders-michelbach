@@ -5,7 +5,7 @@ function add_cpt_references() {
 		'name'                => __( 'Referenzen' ),
   );
   $rewrite = array(
-		'slug'                  => 'referenzen',
+		'slug'                  => 'referenzanlagen',
 		'with_front'            => true,
 		'pages'                 => true,
 		'feeds'                 => true,
