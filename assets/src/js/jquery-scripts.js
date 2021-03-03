@@ -20,13 +20,13 @@ export const jqueryCustomScripts = () => {
             return false;
         });
 
-        $(document).on('scroll', function () {
+        $(window).on('scroll', function () {
 
-            if ($(this).scrollTop() >= $('#page').position().top) {
+            if ($(this).scrollTop() >= 60) {
                 $('.fixed-scroll-top').stop().fadeIn();
                 $('.site-navigation-wrapper').addClass('scroll-smaller');
             }
-            if ($(this).scrollTop() <= $('#page').position().top) {
+            if ($(this).scrollTop() <= 60) {
                 $('.fixed-scroll-top').stop().fadeOut();
                 $('.site-navigation-wrapper').removeClass('scroll-smaller');
             }

@@ -1,7 +1,11 @@
 .site-header {
-    //margin-top: -7vw;
     position: relative;
-    //padding-top: 7vw;
+    padding-top: 70px;
+
+    @include media-breakpoint-up(lg){
+        padding-top: 140px;
+    }
+
 }
 
 .hero-bg-img {
